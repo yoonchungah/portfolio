@@ -66,7 +66,7 @@ export default {
       onMounted(() => {
         window.addEventListener("scroll",()=>{
           const menu = document.getElementById("main_menu");
-          const Intro = document.getElementById("Intro");
+          // const Intro = document.getElementById("Intro");
           const scrollY = window.pageYOffset;
           if( Intro.offsetTop < scrollY ){
             menu.classList.add('menuFixed');
@@ -129,11 +129,11 @@ export default {
 /* 네비게이션 */
 #main_menu{
   position: fixed;
-  top:85%; left: 50%;
+  top:calc(100% - 100px); left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   width: 1440px;
-  transition: top 1s;
+  transition: top 2s;
   z-index: 9999;
   background-color: #0a0a0a;
   height: 100px;

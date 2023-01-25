@@ -3,11 +3,11 @@
     <div class="intro_wrap w1440">
       <div class="intro_cont">
         <div class="intro_title">
-          <p data-aos="fade-right" data-aos-duration="1000" >challenging</p>
-          <p data-aos="fade-right" data-aos-duration="1200" >logical</p>
-          <p data-aos="fade-right" data-aos-duration="1400" >analytical</p>
-          <p data-aos="fade-right" data-aos-duration="1600" >systematic</p>
-          <p data-aos="fade-right" data-aos-duration="1800" >responsible</p>
+          <span data-aos="fade-right" data-aos-duration="1000" >challenging</span>
+          <span data-aos="fade-right" data-aos-duration="1200" >logical</span>
+          <span data-aos="fade-right" data-aos-duration="1400" >analytical</span>
+          <span data-aos="fade-right" data-aos-duration="1600" >systematic</span>
+          <span data-aos="fade-right" data-aos-duration="1800" >responsible</span>
         </div>
         <div class="intro_icon">
           <img src="../assets/img/main_icon.png" alt="icon_me">
@@ -18,26 +18,7 @@
   </div>
 </template>
 
-<script>
-import {onMounted}  from 'vue'
-  export default{
-    setup(){
-      onMounted(() => {
-        window.addEventListener("scroll",()=>{
-          const menu = document.getElementById("main_menu");
-          const Intro = document.getElementById("Intro");
-          const scrollY = window.pageYOffset;
-          if( Intro.offsetTop < scrollY ){
-            menu.classList.add('menuFixed');
-          } else{
-            menu.classList.remove('menuFixed');
-          }
-        })
-      })
-  }
 
-};
-</script>
 
 <style scoped>
   #Intro{
@@ -50,9 +31,13 @@ import {onMounted}  from 'vue'
   .intro_cont{
     display: flex;
     justify-content: space-between;
-    padding-top:100px;
+    padding-top:40px;
   }
-  .intro_title p{
+  .intro_title{
+    display: flex;
+    flex-direction: column;
+  }
+  .intro_title span{
     font-size: 72px;
     font-weight: bold;
     text-transform: uppercase;

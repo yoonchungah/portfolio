@@ -1,15 +1,5 @@
 <template>
   <div id="Intro">
-    <div class="header_wrap">
-      <div class="header">
-        <div class="header_title"><h2>chungah Portfolio</h2></div>
-        <div class="ham_nav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
     <div class="intro_wrap w1440">
       <div class="intro_cont">
         <div class="intro_title">
@@ -20,18 +10,33 @@
           <p data-aos="fade-right" data-aos-duration="1800" >responsible</p>
         </div>
         <div class="intro_icon">
-          <img src="../../public/img/main_icon.png" alt="icon_me">
+          <img src="../assets/img/main_icon.png" alt="icon_me">
         </div>
       </div>
-      <div class="intro_sub_title mt40">이유를 찾는 프론트앤드 개발자 윤청아입니다.</div>
+      <div class="intro_sub_title mt40">이유를 찾는 프론트엔드 개발자 윤청아입니다.</div>
     </div>
   </div>
 </template>
 
 <script>
+import {onMounted}  from 'vue'
   export default{
+    setup(){
+      onMounted(() => {
+        window.addEventListener("scroll",()=>{
+          const menu = document.getElementById("main_menu");
+          const Intro = document.getElementById("Intro");
+          const scrollY = window.pageYOffset;
+          if( Intro.offsetTop < scrollY ){
+            menu.classList.add('menuFixed');
+          } else{
+            menu.classList.remove('menuFixed');
+          }
+        })
+      })
+  }
 
-  };
+};
 </script>
 
 <style scoped>
@@ -40,47 +45,21 @@
     height: 100vh;
     background-color: #f3f3f3;
   }
-  /* 헤더 */
-  .header{
-    padding: 40px 3%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header_title h2{
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  .ham_nav{
-    width: 30px;
-    position: fixed;
-    top:5%; right: 3%;
-  }
-  .ham_nav span{
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #0a0a0a;
-  }
-  .ham_nav span:nth-child(2){
-    margin: 5px 0;
-    transform: translateX(-5px);
-  }
-  .ham_nav span:nth-child(3){
-    transform: translateX(-10px);
-  }
-
+  
 /* 인트로 내용 */
   .intro_cont{
     display: flex;
     justify-content: space-between;
+    padding-top:100px;
   }
   .intro_title p{
     font-size: 72px;
     font-weight: bold;
     text-transform: uppercase;
     color: #FF6475;
+  }
+  .intro_icon img{
+    width: 100%;
   }
   .intro_sub_title{
     font-size: 40px;

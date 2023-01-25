@@ -1,5 +1,14 @@
 <template>
-  <nav id="main_menu" >
+  <div class="header_wrap">
+    <div class="header">
+      <div class="ham_nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <nav id="main_menu">
     <ul>
       <li v-on:click="gosection" data-target="Intro" class="gotosce">INTRO</li>
       <li v-on:click="gosection" data-target="About" class="gotosce">ABOUT ME</li>
@@ -26,9 +35,9 @@ import javascript from './components/javascript.vue';
 import contact from './components/contact.vue';
 
 
+import {onMounted}  from 'vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
 export default {
   name: 'App',
   components: {
@@ -41,18 +50,33 @@ export default {
 
     AOS,
 
-  },
+},
   created() {
-        AOS.init();
+    AOS.init();
   },
   data() {
     return {
-      // menuFixed: "false",
+    // menuFixed: "false",
     }
   },
+  // methods : {
+    
+  //   },
+    setup(){
+      onMounted(() => {
+        window.addEventListener("scroll",()=>{
+          const menu = document.getElementById("main_menu");
+          const Intro = document.getElementById("Intro");
+          const scrollY = window.pageYOffset;
+          if( Intro.offsetTop < scrollY ){
+            menu.classList.add('menuFixed');
+          } else{
+            menu.classList.remove('menuFixed');
+          }
+        })
+      })
 
-  methods : {
-    gosection(e){
+      function gosection(e){
       //class="gotosce"가 타겟에 없으면 아무것도 하지말고 그냥 리턴 시켜라 중복방지
       if(!e.target.matches(".gotosce")) return;
       e.preventDefault();
@@ -61,9 +85,12 @@ export default {
       if(sec){
         sec.scrollIntoView({behavior : "smooth"});
         }
-      },
-    },
-
+      }
+      
+      return{
+        gosection,
+      }
+    }
   }
 </script>
 
@@ -75,12 +102,41 @@ export default {
   color: #0a0a0a;
 }
 
+/* 헤더 */
+.header_wrap{
+  background-color: #f3f3f3;
+  display: none;
+}
+.ham_nav{
+  width: 30px;
+  position: fixed;
+  top:5%; right: 3%;
+}
+.ham_nav span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #0a0a0a;
+}
+.ham_nav span:nth-child(2){
+  margin: 5px 0;
+  transform: translateX(-5px);
+}
+.ham_nav span:nth-child(3){
+  transform: translateX(-10px);
+}
+
+/* 네비게이션 */
 #main_menu{
   position: fixed;
-  top:91%; left: 50%;
+  top:85%; left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   width: 1440px;
+  transition: top 1s;
+  z-index: 9999;
+  background-color: #0a0a0a;
+  height: 100px;
 }
 #main_menu.menuFixed{
   position: fixed;
@@ -88,21 +144,32 @@ export default {
 }
 #main_menu>ul{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 100%;
+  max-width: 70%;
   margin: 0 auto;
-  background-color: #0a0a0a;
-  padding-top:2%;
-  padding-bottom:2%;
 }
 #main_menu>ul>li{
   font-weight: bold;
   color: #F3F3F3;
-  margin-right: 5%;
+  position: relative;
 }
-#main_menu>ul>li:last-child{
-  margin-right: 0;
+#main_menu>ul>li:hover::after{
+  transform: scaleX(1);
+}
+#main_menu>ul>li::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: #FF6475;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .3s;
 }
 
 /* 공통 css */

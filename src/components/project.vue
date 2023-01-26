@@ -5,7 +5,7 @@
       <div class="project_cont mt40">
         <p>지금까지 작업한 프로젝트를 소개합니다!</p>
         <div class="project_box_wrap mt100">
-          <div class="project_box eri_project hov1">
+          <div class="project_box eri_project">
             <article class="project_ex">
               <h2 class="pj_title">에리제론</h2>
               <div class="pj_cont mt40">친환경 비건 브랜드를 리뉴얼한 반응형 웹사이트입니다. db연결을 이용해 데이터를 담아두고 데이터 바인딩을 통해 컨텐츠와 메뉴를 불러오는 작업을 마친 사이트입니다.</div>
@@ -32,7 +32,7 @@
               </ul>
             </article>
           </div>
-          <div class="project_box geul_project hov1">
+          <div class="project_box geul_project">
             <article class="project_ex">
               <h2 class="pj_title">글항아리</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
@@ -59,7 +59,7 @@
               </ul>
             </article>
           </div>
-          <div class="project_box sungho_project hov1">
+          <div class="project_box sungho_project">
             <article class="project_ex">
               <h2 class="pj_title">성호전자</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
@@ -86,14 +86,14 @@
               </ul>
             </article>
           </div>
-          <div class="project_box team_project hov1">
+          <div class="project_box team_project">
             <article class="project_ex">
               <h2 class="pj_title">장욱진미술관 팀 프로젝트</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
               <ul class="pj_menu">
                 <li>
                   <p>프로젝트 개요</p>
-                  <span>미술관 사이트 웹버전 , 모바일버전</span>
+                  <span>미술관 사이트 웹버전, 모바일버전</span>
                 </li>
                 <li>
                   <p>프로젝트 참여도</p>
@@ -113,7 +113,7 @@
               </ul>
             </article>
           </div>
-          <div class="project_box dosirak_cloning hov1">
+          <div class="project_box dosirak_cloning">
             <article class="project_ex">
               <h2 class="pj_title">도시락통</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
@@ -140,7 +140,7 @@
               </ul>
             </article>
           </div>
-          <div class="project_box shouse_cloning hov1">
+          <div class="project_box shouse_cloning">
             <article class="project_ex">
               <h2 class="pj_title">싱그러운 집</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
@@ -167,7 +167,7 @@
               </ul>
             </article>
           </div>
-          <div class="project_box richmond_cloning hov1">
+          <div class="project_box richmond_cloning">
             <article class="project_ex">
               <h2 class="pj_title">더리치몬드 평창</h2>
               <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
@@ -205,15 +205,13 @@ import {onMounted}  from 'vue'
     setup(){
       onMounted(() => {
         let projectBox = document.querySelectorAll('.project_box');
-        // let projectBox = document.querySelectorAll('.hov1');
         window.addEventListener("scroll",()=>{
           for( let i = 0 ; i <projectBox.length; i++){ 
             if( Project.offsetTop-500 < scrollY ){
-              // projectBox[i].style.transform = 'rotateX(-5deg)', 'translateY(1px)';
-              projectBox[i].style.transform = 'translateY(1px)';
+              projectBox[i].style.transform = 'rotateX(-5deg)','translateX(0)';
 
             } else{
-                projectBox[i].style.transform = 'translateX(-200%)';
+              projectBox[i].style.transform = 'translateX(-200%)';
               }
             }
         })
@@ -228,14 +226,15 @@ import {onMounted}  from 'vue'
             projectBox[j].style.transform = 'rotateX(0deg)', 'translateY(0)';
             projectBox[j].style.paddingTop = '2%';
             projectBox[j].style.paddingBottom = '10%';
-            linkA_arry.classList.add("lk_active");
+            projectBox[j].style.transition = 'transform 1.5s';
+            // linkA_arry.classList.add("lk_active");
           }),
           projectBox[j].addEventListener('mouseleave',()=>{
             projectBox[j].classList.remove("pj_active");
             projectBox[j].style.transform = 'rotateX(-5deg)', 'translateY(1px)';
             projectBox[j].style.paddingTop = '6%';
             projectBox[j].style.paddingBottom = '6%';
-            linkA_arry.classList.remove("lk_active");
+            // linkA_arry.classList.remove("lk_active");
           })
         }
          
@@ -269,8 +268,6 @@ import {onMounted}  from 'vue'
     width: 100%;
     perspective: 700px;
   }
-
-  /* 클래스 각각줘서 하나는 위치만 하나는 각도만 조절해주기!!!!!!!!!!!!! */
   .project_box{
     width: 100%;
     position: absolute;
@@ -284,8 +281,7 @@ import {onMounted}  from 'vue'
     background-color: #1D1D1D;
     color: #FF6475;
     transform-style: preserve-3d;
-    transform: rotateX(-5deg) translateY(1px);
-    /* transform: translateY(1px); */
+    /* transform: rotateX(-5deg) translateY(1px); */
     border-radius: 23px;
     border-top: 10px solid #FF6475;
   }
@@ -392,7 +388,7 @@ import {onMounted}  from 'vue'
     font-weight: bold;
     font-size: 18px;
   }
-  .server_menu li a.lk_active{
+  /* .server_menu li a.lk_active{
     color: #1D1D1D;
-  }
+  } */
 </style>

@@ -73,9 +73,10 @@ import {onMounted}  from 'vue'
   .skills_wrap h2{
     font-size: 40px;
     text-transform: uppercase;
+    font-weight: bold;
   }
-  .skills_cont p{
-    font-size: 74px;
+  .skills_cont>p{
+    font-size: 40px;
   }
 
   /* 아이콘 */

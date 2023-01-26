@@ -83,6 +83,7 @@
   .about_wrap h2{
     font-size: 40px;
     text-transform: uppercase;
+    font-weight: bold;
   }
   .about_cont{
     display: flex;

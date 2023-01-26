@@ -38,7 +38,7 @@
     flex-direction: column;
   }
   .intro_title span{
-    font-size: 72px;
+    font-size: 74px;
     font-weight: bold;
     text-transform: uppercase;
     color: #FF6475;

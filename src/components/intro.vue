@@ -3,13 +3,13 @@
     <div class="intro_wrap w1440">
       <div class="intro_cont">
         <div class="intro_title">
-          <span data-aos="fade-right" data-aos-duration="1000" >challenging</span>
-          <span data-aos="fade-right" data-aos-duration="1200" >logical</span>
-          <span data-aos="fade-right" data-aos-duration="1400" >analytical</span>
-          <span data-aos="fade-right" data-aos-duration="1600" >systematic</span>
-          <span data-aos="fade-right" data-aos-duration="1800" >responsible</span>
+          <span data-aos="zoom-in-right" data-aos-duration="1800" data-aos-easing="ease-in-out">challenging</span>
+          <span data-aos="zoom-in-right" data-aos-duration="1800" data-aos-easing="ease-in-out">logical</span>
+          <span data-aos="zoom-in-right" data-aos-duration="1800" data-aos-easing="ease-in-out">analytical</span>
+          <span data-aos="zoom-in-right" data-aos-duration="1800" data-aos-easing="ease-in-out">systematic</span>
+          <span data-aos="zoom-in-right" data-aos-duration="1800" data-aos-easing="ease-in-out">responsible</span>
         </div>
-        <div class="intro_icon">
+        <div class="intro_icon" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="ease-in-out">
           <img src="../assets/img/main_icon.png" alt="icon_me">
         </div>
       </div>

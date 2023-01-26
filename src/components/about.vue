@@ -27,6 +27,8 @@
               <p>취향</p>
             </div>
           </div>
+
+          
         </article>
         <article class="about_right_wrap mt40">
           <div class="about_txt_wrap">
@@ -65,6 +67,13 @@
           </div>
         </article>
       </sction>
+      <!-- 모달창 -->
+      <!-- <div class="black-bg" v-if="모달창열렸니 == true">
+        <div class="white-bg">
+          <h4>제목</h4>
+          <p>어쩌구저쩌구웅애웅</p>
+        </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -121,7 +130,6 @@
   .about_right_wrap{
     width: 50%;
     border-left: 1px solid #f3f3f3;
-    /* background-color: yellowgreen; */
   }
   .about_txt_wrap{
     padding-left: 5%;
@@ -136,4 +144,30 @@
   .about_txt_cont>p:last-child{
     margin-bottom: 0;
   }
+  /* modal */
+  .black-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 20px;
+  }
+  .white-bg{
+    width: 100%;
+    background-color:#fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
 </style>
+
+<!-- <script>
+  export default{
+    name: 'App',
+    data(){
+      return{
+        //false 닫힘 ture열림
+        모달창열렸니 : ture,
+      }
+    }
+  }
+</script> -->

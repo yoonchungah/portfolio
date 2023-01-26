@@ -41,6 +41,8 @@ import {onMounted}  from 'vue'
       onMounted(() => {
         window.addEventListener("scroll",()=>{
           const skillBox = document.querySelectorAll('.skill_box');
+          
+
           for( let i = 0 ; i <skillBox.length; i++){ 
             if( Skills.offsetTop-100 < scrollY ){
               skillBox[i].style.opacity = 1;
@@ -53,14 +55,28 @@ import {onMounted}  from 'vue'
           }
           
         })
+
+        const skillIcon = document.querySelectorAll('.skill_icon');
+        for(let j=0; j<skillIcon.length; j++){
+          skillIcon[j].addEventListener('mouseenter',()=>{
+            skillIcon[j].style.transform = 'scale(1.5)';
+            skillIcon[j].style.transition = 'transform 1s';
+          }),
+          skillIcon[j].addEventListener('mouseleave',()=>{
+            skillIcon[j].style.transform = 'scale(1)';
+          })
+        }
+
       })
+
+
+
     }
   };
 </script>
 <style scoped>
   #Skills{
     width: 100%;
-    /* height: 100vh; */
     height: 100%;
     background-color: #0A0A0A;
     color: #f3f3f3;
@@ -89,6 +105,7 @@ import {onMounted}  from 'vue'
     justify-content: space-around;
     opacity: 0;
     transform: scale(0.5);
+    cursor: pointer;
   }
 </style>
 

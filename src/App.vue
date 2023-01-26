@@ -66,7 +66,6 @@ export default {
       onMounted(() => {
         window.addEventListener("scroll",()=>{
           const menu = document.getElementById("main_menu");
-          // const Intro = document.getElementById("Intro");
           const scrollY = window.pageYOffset;
           if( Intro.offsetTop < scrollY ){
             menu.classList.add('menuFixed');

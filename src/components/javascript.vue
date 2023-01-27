@@ -1,7 +1,7 @@
 <template>
  <div id="Javascript">
    <div class="script_wrap">
-    <h2 class="w1440">skills</h2>
+    <h2 class="w1440">javascript</h2>
    </div>
  </div>
 </template>
@@ -10,7 +10,6 @@
    width: 100%;
    height: 100vh;
    background-color: powderblue;
-   /* margin-top: 600px; */
    margin-top: 26%;
  }
   /* title */

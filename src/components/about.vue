@@ -14,21 +14,15 @@
             항상 의문을 갖고 해답을 찾기 위해 노력하겠습니다.
           </div>
           <div class="profile_icons_wrap mt100">
-            <div class="profile_icons hobby_icon">
+            <div class="profile_icons hobby_icon" @click="openModalFirst = true">
               <img src="../assets/img/profile_icon1.png" alt="profile_icons">
               <p>취미</p>
             </div>
-            <div class="profile_icons personality_icon">
+            <div class="profile_icons personality_icon" @click="openModalLast = true">
               <img src="../assets/img/profile_icon2.png" alt="profile_icons">
               <p>성격</p>
             </div>
-            <div class="profile_icons like_icon">
-              <img src="../assets/img/profile_icon3.png" alt="profile_icons">
-              <p>취향</p>
-            </div>
           </div>
-
-          
         </article>
         <article class="about_right_wrap mt40">
           <div class="about_txt_wrap">
@@ -67,13 +61,54 @@
           </div>
         </article>
       </sction>
-      <!-- 모달창 -->
-      <!-- <div class="black-bg" v-if="모달창열렸니 == true">
-        <div class="white-bg">
-          <h4>제목</h4>
-          <p>어쩌구저쩌구웅애웅</p>
+        <div class="modal_pop" v-if="openModalFirst == true">
+          <div class="modal_bg">
+            <div class="modal_title">
+              <h3>취미</h3>
+              <div class="close_btn" @click="openModalFirst = false">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="modal_img_box">
+              <div class="modal_img_box_top">
+                <div class="mo_hobby_icon mo_hobby_b"><img src="../assets/img/profile_icon7.png" alt="hobby_icon"></div>
+                <div class="mo_hobby_icon mo_hobby_d"><img src="../assets/img/profile_icon8.png" alt="hobby_icon"></div>
+                <div class="mo_hobby_icon mo_hobby_m"><img src="../assets/img/profile_icon9.png" alt="hobby_icon"></div>
+              </div>
+              <div class="modal_img_box_bot">
+                <div class="mo_hobby_icon mo_hobby_h"><img src="../assets/img/profile_icon1.png" alt="hobby_icon"></div>
+              </div>
+            </div>
+            <h4 class="modal_cont">
+              <p>취미는 독서, 일기 쓰기, 웹툰 보기, 등산이에요 다양한 장르 중에 추리를 좋아하지만 요즘에는 가벼운 장르가 끌려요 가끔씩 일기를 쓰며 생각을 정리하고, 날이 좋을때 등산을 즐겨요</p>
+            </h4>
+          </div>
         </div>
-      </div> -->
+        <div class="modal_pop" v-if="openModalLast == true">
+          <div class="modal_bg">
+            <div class="modal_title">
+              <h3>성격</h3>
+              <div class="close_btn" @click="openModalLast = false">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="modal_img_box">
+              <div class="modal_img_box_top">
+                <div class="mo_person_icon mo_person_1"><img src="../assets/img/profile_icon5.png" alt="personality_icon"></div>
+                <div class="mo_person_icon mo_person_2"><img src="../assets/img/profile_icon4.png" alt="personality_icon"></div>
+                <div class="mo_person_icon mo_person_3"><img src="../assets/img/profile_icon6.png" alt="personality_icon"></div>
+              </div>
+              <div class="modal_img_box_bot">
+                <div class="mo_person_icon mo_person_4"><img src="../assets/img/profile_icon2.png" alt="personality_icon"></div>
+              </div>
+            </div>
+            <h4 class="modal_cont">
+              <p>적극적이고 실천력 있어 도전을 망설이지 않아요 좋아하고 관심 있는 것에 끝을 보려는 집착을 갖고 있어요 낯선사람에게 말을 거는게 어렵지 않은 편이에요</p>
+            </h4>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -113,7 +148,7 @@
   }
   .profile_icons_wrap{
     display: flex;
-    justify-content: space-between;
+    gap: 10%;
   }
   .profile_icons{
     width: 150px;
@@ -145,29 +180,194 @@
     margin-bottom: 0;
   }
   /* modal */
-  .black-bg{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  .modal_pop{
     position: fixed;
-    padding: 20px;
+    top:50%; left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 99999;
   }
-  .white-bg{
-    width: 100%;
-    background-color:#fff;
+  .modal_bg{
+    width: 400px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
     border-radius: 8px;
-    padding: 20px;
+    padding-top: 6%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
+  /* 타이틀과 x버튼 */
+  .modal_title{
+    font-weight: bold;
+    color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .close_btn{
+    width: 25px;
+    cursor: pointer;
+  }
+  .close_btn span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #0a0a0a;
+  }
+  .close_btn span:nth-child(1){
+    display: block;
+    transform:rotate(46deg) translate(3px, 5px);
+  }
+  .close_btn span:nth-child(2){
+    margin: 9px 0;
+    display: block;
+    transform:rotate(312deg) translate(3px, -6px);
+  }
+  /* 이미지 영역 */
+  .modal_img_box{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 취미 */
+  .modal_img_box_top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .mo_hobby_icon>img{
+    width: 90%;
+  }
+  /* 취미 아이콘 애니메이션 */
+  .mo_hobby_b{
+    position: relative;
+    animation-name: l_r_moving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes l_r_moving {
+  0%   {  transform: rotate(-10deg);}
+  100%  {  transform: rotate(10deg);}
+}
+
+.mo_hobby_d{
+    position: relative;
+    animation-name: t_b_moving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes t_b_moving {
+  0%   {transform:translateY(0);}
+  100%  {transform:translateY(-20px);}
+  
+}
+
+.mo_hobby_m{
+    position: relative;
+    animation-name: r_l_moving;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes r_l_moving {
+    0%   {  transform: rotate(10deg);}
+  100%  {  transform: rotate(-10deg);}
+}
+
+
+  /* 얼굴 아이콘 */
+  .mo_hobby_icon.mo_hobby_h{
+    text-align: center;
+  }
+  .mo_hobby_icon.mo_hobby_h>img{
+    width: 70%;
+  }
+  /* 텍스트 영역 */
+  .modal_cont{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .modal_cont p{
+    font-size: 18px;
+    color: #0a0a0a;
+  }
+
+  /* modal2 */
+  .mo_person_icon>img{
+    width: 90%;
+  }
+  /* 성격 아이콘 애니메이션 */
+  .mo_person_1{
+  position: relative;
+  animation-name: person_moving_lr;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  }
+  @keyframes person_moving_lr {
+    0%   {  transform: rotate(-10deg);}
+    100%  {  transform: rotate(10deg);}
+  }
+
+.mo_person_2{
+    position: relative;
+    animation-name: person_moving_tb;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes person_moving_tb {
+  0%   {transform:translateY(0);}
+  100%  {transform:translateY(-20px);}
+  
+}
+
+.mo_person_3{
+    position: relative;
+    animation-name: person_moving_rl;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+  @keyframes person_moving_rl {
+  0%   {  transform: rotate(10deg);}
+  100%  {  transform: rotate(-10deg);}
+}
+
+
+  /* 얼굴 아이콘 */
+  .mo_person_icon.mo_person_4{
+    text-align: center;
+  }
+  .mo_person_icon.mo_person_4>img{
+    width: 70%;
+  }
+
 </style>
 
-<!-- <script>
-  export default{
-    name: 'App',
-    data(){
-      return{
-        //false 닫힘 ture열림
-        모달창열렸니 : ture,
-      }
+<script>
+export default {
+  name: 'App',
+
+  data() {
+    return {
+      openModalFirst : false,
+      openModalLast : false,
     }
-  }
-</script> -->
+  },
+
+
+
+}
+</script>

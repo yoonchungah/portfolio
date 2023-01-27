@@ -120,7 +120,7 @@
           <div class="project_box dosirak_cloning">
             <article class="project_ex">
               <h2 class="pj_title">도시락통</h2>
-              <div class="pj_cont mt40">도시락통 사이트를 클론코딩한 반응형 사이트이며, 스와이퍼 라이브러리를 이용해 동적인 요소를 구현하고 기본적인 자바스크립트 문법을 사용한 사이트입니다.</div>
+              <div class="pj_cont mt40">도시락통 사이트를 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
               <ul class="pj_menu">
                 <li>
                   <p>프로젝트 구성</p>
@@ -148,7 +148,7 @@
           <div class="project_box shouse_cloning">
             <article class="project_ex">
               <h2 class="pj_title">싱그러운 집</h2>
-              <div class="pj_cont mt40">싱그러운 집 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다. 스와이퍼 라이브러리와 탭 기능을 추가하여 동적인 요소를 구현했습니다.</div>
+              <div class="pj_cont mt40">싱그러운 집 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
               <ul class="pj_menu">
                 <li>
                   <p>프로젝트 구성</p>
@@ -176,7 +176,7 @@
           <div class="project_box richmond_cloning">
             <article class="project_ex">
               <h2 class="pj_title">더리치몬드 평창</h2>
-              <div class="pj_cont mt40">더리치몬드 평창사이트를 클론코딩한 반응형 사이트입니다.</div>
+              <div class="pj_cont mt40">더리치몬드 평창사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
               <ul class="pj_menu">
                 <li>
                   <p>프로젝트 구성</p>

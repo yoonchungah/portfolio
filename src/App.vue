@@ -236,9 +236,6 @@ html{
   .mt100{
     margin-top: 60px;
   }
-  .mt40{
-    margin-top: 30px;
-  }
   #main_menu>ul{
     max-width: 100%;
     padding-right: 3%;

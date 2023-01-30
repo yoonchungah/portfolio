@@ -195,7 +195,9 @@ import {onMounted}  from 'vue'
             projectBox[j].classList.remove("pj_active");
             projectBox[j].style.transform = 'rotateX(-5deg)', 'translateY(1px)';
             projectBox[j].style.paddingTop = '6%';
+            projectBox[j].style.paddingTop = '80px';
             projectBox[j].style.paddingBottom = '6%';
+            projectBox[j].style.paddingBottom = '80px';
             for(let k=0; k<siteLink.length; k++){
               siteLink[k].classList.remove("lk_active");
             }
@@ -240,7 +242,9 @@ import {onMounted}  from 'vue'
     padding-left: 4%;
     padding-right: 4%;
     padding-top: 6%;
+    padding-top: 80px;
     padding-bottom: 6%;
+    padding-bottom: 80px;
     box-sizing: border-box;
     background-color: #1D1D1D;
     color: #FF6475;
@@ -248,24 +252,26 @@ import {onMounted}  from 'vue'
     transform: rotateX(-5deg) translateY(1px);
     border-radius: 23px;
     border-top: 10px solid #FF6475;
+    /* height: 450px; */
   }
   .project_box.geul_project{
     top:0;
   }
   .project_box.eri_project{
-    top:18%;
+    top:20%;
+    top:180px;
   } 
   .project_box.team_project{
-    top:36%;
+    top:360px;
   } 
   .project_box.dosirak_cloning{
-    top:53%;
+    top:530px;
   } 
   .project_box.shouse_cloning{
-    top:70%;
+    top:700px;
   } 
   .project_box.richmond_cloning{
-    top:86%;
+    top:870px;
   } 
 
   .project_box.pj_active{
@@ -278,19 +284,19 @@ import {onMounted}  from 'vue'
     top:-19.5%;
   }
   .project_box.eri_project:hover{
-    top:-1%;
+    top:-1.5%;
   }
   .project_box.team_project:hover{
-    top:17.5%;
+    top:16.5%;
   }
   .project_box.dosirak_cloning:hover{
-    top:36%;
+    top:33.5%;
   }
   .project_box.shouse_cloning:hover{
-    top:54.5%;
+    top:50.5%;
   }
   .project_box.richmond_cloning:hover{
-    top:73%;
+    top:66.5%;
   }
   /* 프로젝트 왼쪽 */
   .project_ex{
@@ -320,7 +326,6 @@ import {onMounted}  from 'vue'
     text-align: right;
   }
   .project_view .pj_num{
-    font-size: 40px;
     font-size: 30px;
   }
   .project_view .pj_num span{
@@ -374,42 +379,47 @@ import {onMounted}  from 'vue'
     font-size: 16px;
   }
   /* 높이 */
-  .project_box.geul_project{
-    top:6%;
+  /* .project_box.geul_project{
+    top:3%;
   }
   .project_box.eri_project{
     top:20%;
   } 
   .project_box.team_project{
-    top:34%;
+    top:36%;
   } 
   .project_box.dosirak_cloning{
-    top:48%;
+    top:52%;
   } 
   .project_box.shouse_cloning{
-    top:62%;
+    top:68%;
   } 
   .project_box.richmond_cloning{
-    top:76%;
-  }
+    top:83%;
+  } */
   /* 호버 */
   .project_box.geul_project:hover{
-    top:-11%;
+    top:-14%;
   }
   .project_box.eri_project:hover{
     top:3%;
+    top:6%;
   }
   .project_box.team_project:hover{
-    top:17%;
+    top:19%;
+    top:22%;
   }
   .project_box.dosirak_cloning:hover{
-    top:34%;
+    top:35%;
+    top:38%;
   }
   .project_box.shouse_cloning:hover{
-    top:48%;
+    top:51%;
+    top:54%;
   }
   .project_box.richmond_cloning:hover{
-    top:61%;
+    top:66%;
+    top:69%;
   }
 }
 @media (max-width:1000px) {

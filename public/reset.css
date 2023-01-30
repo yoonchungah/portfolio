@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.5; /*원래1인데 가독성을 위해 1.5로 변경*/
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;

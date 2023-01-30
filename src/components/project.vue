@@ -5,202 +5,168 @@
       <div class="project_cont mt40">
         <p>지금까지 작업한 프로젝트를 소개합니다!</p>
         <div class="project_box_wrap mt100">
-          <div class="project_box geul_project">
+          <section class="project_box geul_project">
             <article class="project_ex">
               <h2 class="pj_title">글항아리</h2>
-              <div class="pj_cont mt40">출판사 글항아리를 리뉴얼한 반응형 웹사이트입니다. 접근성이 불편했던 기존 사이트를 직관적으로 개선하고자 했으며, db연결과 데이터 바인딩을 통해 각 컨텐츠와 서브페이지를 불러오는 작업을 마친 사이트입니다.</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 구성</p>
-                  <span>반응형웹 + main +sub +db연결(기업소개/책페이지/게시판/로그인)</span>
+                  프로젝트 구성
+                  <span>반응형웹 + main +sub +db연결<br>(기업소개/책페이지/게시판/로그인)</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>100%(1인 프로젝트)</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Photoshop, Figma, Html, CSS, Javascript, node, MySql</span>
+                  사용기술
+                  <span>Photoshop, Figma, Html, Css, Javascript, node, MySql</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/01<span>WEB</span></h2>
+              <h2 class="pj_num">01/<span>WEB</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
-          <div class="project_box eri_project">
+          </section>
+          <section class="project_box eri_project">
             <article class="project_ex">
               <h2 class="pj_title">에리제론</h2>
-              <div class="pj_cont mt40">비건 브랜드 에리제론을 리뉴얼한 웹사이트입니다. 반응형 사이트로 개선하여 웹 접근성을 높였으며, db연결과 데이터 바인딩을 통해 각 컨텐츠와 서브페이지를 불러오는 작업을 마친 사이트입니다.</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 구성</p>
-                  <span>반응형웹 + main +sub +db연결(기업소개/상품페이지/게시판/로그인)</span>
+                  프로젝트 구성
+                  <span>반응형웹 + main +sub +db연결<br>(기업소개/상품페이지/게시판/로그인)</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>100%(1인 프로젝트)</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Photoshop, Figma, Html, CSS, Javascript, node, MySql</span>
+                  사용기술
+                  <span>Photoshop, Figma, Html, Css, Javascript, node, MySql</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/02<span>WEB</span></h2>
+              <h2 class="pj_num">02/<span>WEB</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
-          <div class="project_box sungho_project">
-            <article class="project_ex">
-              <h2 class="pj_title">성호전자</h2>
-              <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
-              <ul class="pj_menu">
-                <li>
-                  <p>프로젝트 구성</p>
-                  <span>반응형웹 + main +sub +db연결(기업소개/홍보/인재채용)</span>
-                </li>
-                <li>
-                  <p>프로젝트 참여도</p>
-                  <span>100%(1인 프로젝트)</span>
-                </li>
-                <li>
-                  <p>사용기술</p>
-                  <span>Photoshop, Figma, Html, CSS, Javascript, node, MySql</span>
-                </li>
-              </ul>
-            </article>
-            <article class="project_view">
-              <h2 class="pj_num">/03<span>WEB</span></h2>
-              <ul class="server_menu mt40">
-                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
-              </ul>
-            </article>
-          </div>
-          <div class="project_box team_project">
+          </section>
+          <section class="project_box team_project">
             <article class="project_ex">
               <h2 class="pj_title">장욱진미술관 팀 프로젝트</h2>
-              <div class="pj_cont mt40">웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키웅앵웅초키포키</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 개요</p>
+                  프로젝트 개요
                   <span>미술관 사이트 웹버전, 모바일버전</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>코딩 기여도 : 메인페이지 33% 서브페이지 80% <br class="txt_br">디자인 기여도 : 90%<br class="txt_br">홈페이지 선정, 아이디어 구상, 프로토타입 제작</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Photoshop, Figma, Html, CSS, Javascript, node, MySql</span>
+                  사용기술
+                  <span>Photoshop, Figma, Html, Css, Javascript, node, MySql</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/04<span>WEB</span></h2>
+              <h2 class="pj_num">03/<span>WEB</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
-          <div class="project_box dosirak_cloning">
+          </section>
+          <section class="project_box dosirak_cloning">
             <article class="project_ex">
               <h2 class="pj_title">도시락통</h2>
-              <div class="pj_cont mt40">도시락통 사이트를 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 구성</p>
+                  프로젝트 구성
                   <span>반응형웹 + main</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>100%(1인 웹클로닝 프로젝트)</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Html, CSS, Javascript</span>
+                  사용기술
+                  <span>Html, Css, Javascript</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/05<span>CLONING</span></h2>
+              <h2 class="pj_num">04/<span>CLONING</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
-          <div class="project_box shouse_cloning">
+          </section>
+          <section class="project_box shouse_cloning">
             <article class="project_ex">
               <h2 class="pj_title">싱그러운 집</h2>
-              <div class="pj_cont mt40">싱그러운 집 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 구성</p>
+                  프로젝트 구성
                   <span>반응형웹 + main</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>100%(1인 웹클로닝 프로젝트)</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Html, CSS, Javascript</span>
+                  사용기술
+                  <span>Html, Css, Javascript</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/06<span>CLONING</span></h2>
+              <h2 class="pj_num">05/<span>CLONING</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
-          <div class="project_box richmond_cloning">
+          </section>
+          <section class="project_box richmond_cloning">
             <article class="project_ex">
               <h2 class="pj_title">더리치몬드 평창</h2>
-              <div class="pj_cont mt40">더리치몬드 평창사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
-              <ul class="pj_menu">
+              <ul class="pj_menu mt40">
                 <li>
-                  <p>프로젝트 구성</p>
+                  프로젝트 구성
                   <span>반응형웹 + main</span>
                 </li>
                 <li>
-                  <p>프로젝트 참여도</p>
+                  프로젝트 참여도
                   <span>100%(1인 웹클로닝 프로젝트)</span>
                 </li>
                 <li>
-                  <p>사용기술</p>
-                  <span>Html, CSS, Javascript</span>
+                  사용기술
+                  <span>Html, Css, Javascript</span>
                 </li>
               </ul>
             </article>
             <article class="project_view">
-              <h2 class="pj_num">/07<span>CLONING</span></h2>
+              <h2 class="pj_num">06/<span>CLONING</span></h2>
               <ul class="server_menu mt40">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </article>
-          </div>
+          </section>
         </div>
       </div>
     </div>
@@ -289,20 +255,17 @@ import {onMounted}  from 'vue'
   .project_box.eri_project{
     top:18%;
   } 
-  .project_box.sungho_project{
+  .project_box.team_project{
     top:36%;
   } 
-  .project_box.team_project{
-    top:54%;
-  } 
   .project_box.dosirak_cloning{
-    top:72%;
+    top:53%;
   } 
   .project_box.shouse_cloning{
-    top:90%;
+    top:70%;
   } 
   .project_box.richmond_cloning{
-    top:108%;
+    top:86%;
   } 
 
   .project_box.pj_active{
@@ -312,52 +275,48 @@ import {onMounted}  from 'vue'
   }
 
   .project_box.geul_project:hover{
-    top:-22%;
+    top:-19.5%;
   }
   .project_box.eri_project:hover{
-    top:0%;
-  }
-  .project_box.sungho_project:hover{
-    top:18%;
+    top:-1%;
   }
   .project_box.team_project:hover{
-    top:36%;
+    top:17.5%;
   }
   .project_box.dosirak_cloning:hover{
-    top:54%;
+    top:36%;
   }
   .project_box.shouse_cloning:hover{
-    top:73%;
+    top:54.5%;
   }
   .project_box.richmond_cloning:hover{
-    top:90%;
+    top:73%;
   }
   /* 프로젝트 왼쪽 */
   .project_ex{
-    width: 65%;
+    width: 80%;
   }
   .pj_title{
     font-size: 40px;
     font-weight: bold;
   }
-  .pj_cont{
-    font-size: 18px;
-  }
-  .pj_menu{
-    margin-top: 20px;
-  }
   .pj_menu li{
     display: flex;
     font-size: 18px;
-  }
-  .pj_menu li p{
+    margin-bottom: 10px;
     font-weight: bold;
-    width: 20%;
+  }
+  .pj_menu li:last-child{
+    margin-bottom: 0;
+  }
+  .pj_menu li span{
+    font-weight: normal;
+    margin-left: 3%;
   }
 
   /* 프로젝트 오른쪽 */
   .project_view{
-    width: 30%;
+    width: 18%;
     text-align: right;
   }
   .project_view .pj_num{
@@ -368,7 +327,10 @@ import {onMounted}  from 'vue'
     margin-left: 5%;
   }
   .server_menu li{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+  .server_menu li:last-child{
+    margin-bottom: 0;
   }
   .site_link{
     color: #FF6475;
@@ -381,4 +343,102 @@ import {onMounted}  from 'vue'
   .site_link span{
     margin-left: 2%;
   }
+
+
+
+  @media (max-width:1280px) {
+   /* 프로젝트 왼쪽 */
+  .project_ex{
+    width: 70%;
+  }
+  /* 프로젝트 오른쪽 */
+  .project_view{
+    width: 28%;
+  }
+  .project_wrap>h2{
+    font-size: 1.925rem;
+  }
+  .project_cont>p{
+    font-size: 1.925rem;
+  }
+  .pj_title{
+    font-size: 1.925rem;
+  }
+  .project_view .pj_num{
+    font-size: 1.5rem;
+  }
+  .site_link{
+    font-size: 16px;
+  }
+  .pj_menu li{
+    font-size: 16px;
+  }
+  /* 높이 */
+  .project_box.geul_project{
+    top:6%;
+  }
+  .project_box.eri_project{
+    top:20%;
+  } 
+  .project_box.team_project{
+    top:34%;
+  } 
+  .project_box.dosirak_cloning{
+    top:48%;
+  } 
+  .project_box.shouse_cloning{
+    top:62%;
+  } 
+  .project_box.richmond_cloning{
+    top:76%;
+  }
+  /* 호버 */
+  .project_box.geul_project:hover{
+    top:-11%;
+  }
+  .project_box.eri_project:hover{
+    top:3%;
+  }
+  .project_box.team_project:hover{
+    top:17%;
+  }
+  .project_box.dosirak_cloning:hover{
+    top:34%;
+  }
+  .project_box.shouse_cloning:hover{
+    top:48%;
+  }
+  .project_box.richmond_cloning:hover{
+    top:61%;
+  }
+}
+@media (max-width:1000px) {
+  .project_box{
+      width: 100%;
+      height: 430px;
+    }
+  .project_box_wrap{
+    height: 100vh;
+    width: 90vw;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+@media (max-width:800px) {
+  .project_wrap>h2{
+    font-size: 5.5vw;
+  }
+  .project_cont>p{
+    display:none;
+  }
+  .pj_title{
+    font-size: 5.5vw;
+  }
+  /* .project_view .pj_num{
+    font-size: 2vw;
+  } */
+  .project_view .pj_num span{
+  display:none;
+}
+}
 </style>

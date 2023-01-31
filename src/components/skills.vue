@@ -82,8 +82,8 @@ import {onMounted}  from 'vue'
     color: #f3f3f3;
   }
   .skills_wrap{
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:6%;
+    padding-bottom:6%;
   }
   /* title */
   .skills_wrap h2{

@@ -13,7 +13,7 @@
       <li v-on:click="gosection" data-target="Intro" class="gotosce">INTRO</li>
       <li v-on:click="gosection" data-target="About" class="gotosce">ABOUT ME</li>
       <li v-on:click="gosection" data-target="Skills" class="gotosce">SKILLS</li>
-      <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li>
+      <!-- <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li> -->
       <li v-on:click="gosection" data-target="Javascript" class="gotosce">JAVASCRIPT</li>
       <li v-on:click="gosection" data-target="Contact" class="gotosce">CONTACT</li>
     </ul>
@@ -21,7 +21,7 @@
   <intro />
   <about />
   <skills />
-  <project />
+  <!-- <project /> -->
   <javascript />
   <contact />
 </template>
@@ -30,7 +30,7 @@
 import intro from './components/intro.vue';
 import about from './components/about.vue';
 import skills from './components/skills.vue';
-import project from './components/project.vue';
+// import project from './components/project.vue';
 import javascript from './components/javascript.vue';
 import contact from './components/contact.vue';
 
@@ -44,7 +44,7 @@ export default {
     intro,
     about,
     skills,
-    project,
+    // project,
     javascript,
     contact,
 
@@ -126,7 +126,7 @@ export default {
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #0a0a0a;
+  background-color: #FF6475;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
 }

@@ -7,7 +7,7 @@
           <div class="profile_img mt40">
             <img src="../assets/img/profile_img.png" alt="profile_img">
           </div>
-          <div class="profile_age mt40">1996년생 윤청아</div>
+          <div class="resume mt40">이력서 보기</div>
           <div class="profile_cont mt40">
             <p>'왜?'</p>
             이유가 있기 때문에 결과도 있다고 생각합니다.<br>
@@ -121,10 +121,10 @@
     color: #f3f3f3;
   }
   .about_wrap{
-    padding-top:100px;
-    padding-bottom:100px;
+    padding-top:6%;
+    padding-bottom:6%;
   }
-  .about_wrap h2{
+  .about_wrap>h2{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -140,8 +140,23 @@
   .profile_img{
     width: 100%;
   }
+  .resume{
+    border: 1px solid #f3f3f3;
+    padding: 2%;
+    text-align: center;
+    width: 200px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 1s;
+  }
+  .resume.resume_active{
+    background-color: #f3f3f3;
+    color: #0a0a0a;
+    border: 0;
+  }
   .profile_cont p{
     font-size: 40px;
+    padding-bottom: 10px;
   }
   .profile_img img{
     width: 100%;
@@ -173,6 +188,12 @@
   .about_txt{
     padding-bottom: 80px;
   }
+  .about_txt:last-child{
+    padding-bottom: 0;
+  }
+  .about_txt_title{
+    font-size: 1.325rem;
+  }
   .about_txt_cont>p{
     margin-bottom: 20px;
   }
@@ -187,7 +208,7 @@
     z-index: 99999;
   }
   .modal_bg{
-    width: 400px;
+    max-width: 400px;
     box-sizing: border-box;
     background-color: #f3f3f3;
     border-radius: 8px;
@@ -354,9 +375,66 @@
     width: 70%;
   }
 
+
+/* 반응형 */
+@media (max-width:1280px){
+  .about_wrap>h2{
+    font-size: 1.925rem;
+  }
+  .profile_cont p{
+    font-size: 1.925rem;
+  }
+  .about_txt{
+    padding-bottom: 60px;
+  }
+}
+@media (max-width:1000px) {
+  .about_cont{
+    flex-wrap: wrap;
+  }
+  /* 왼쪽 */
+  .about_left_wrap{
+    width:100%;
+  }
+  .resume{
+    width: 170px;
+  }
+    .profile_cont br{
+    display: none;
+  }
+  /* 오른쪽 */
+  .about_right_wrap{
+    width: 100%;
+    border-left: 0;
+  }
+  .about_txt_wrap{
+    padding-left: 0;
+  }
+.about_txt{
+  padding-bottom: 80px;
+}
+}
+@media (max-width:800px) {
+  .about_wrap>h2{
+   font-size: 5.5vw;
+ }
+ .modal_bg{
+  width: 80vw;
+ }
+}
+@media (max-width:450px){
+  .profile_icons_wrap{
+    justify-content: center;
+  }
+  .profile_icons{
+    width: 130px;
+    height: 130px;
+  }
+}
 </style>
 
 <script>
+import {onMounted}  from 'vue'
 export default {
   name: 'App',
 
@@ -367,7 +445,19 @@ export default {
     }
   },
 
+  setup(){
+      onMounted(() => {
+        let resume = document.querySelector('.resume');
 
+        resume.addEventListener('mouseenter',()=>{
+          resume.classList.add("resume_active");
+          }),
+
+          resume.addEventListener('mouseleave',()=>{
+            resume.classList.remove("resume_active");
+          })
+      })
+    }
 
 }
 </script>

@@ -16,7 +16,7 @@
  #Javascript{
    width: 100%;
    height: 80vh;
-   margin-top: 100px;
+   margin-top: 5%;
  }
   /* title */
   .script_wrap>h2{
@@ -41,9 +41,7 @@
    height: 100%;
    padding-bottom: 13%;
  }
-  #Javascript{
-   margin-top: 0;
- }
+
   .script_wrap>h2{
     font-size: 1.925rem;
   }
@@ -57,6 +55,9 @@
   }
 }
 @media (max-width:800px) {
+  /* #Javascript{
+   margin-top: 0;
+ } */
   .script_wrap>h2{
     font-size: 5.5vw;
   }

@@ -75,7 +75,6 @@ export default {
         })
 
         let header = document.querySelector('.header');
-        // let main_nav = document.querySelector('#main_menu>ul');
         let span = document.querySelectorAll('span');
         header.addEventListener('click', ()=>{
           menu.classList.toggle('main_nav_active');
@@ -282,7 +281,7 @@ html{
     top: 30px;
   }
   .header_wrap{
-  display: block;
+    display: block;
   }
 
   .ham_nav{
@@ -290,13 +289,13 @@ html{
   }
 }
 @media (max-width:768px) {
-    /* 공통 css */
+  /* 공통 css */
   html{
     font-size: 16px;
   }
 }
 @media (max-width:380px) {
-    /* 공통 css */
+  /* 공통 css */
   html{
     font-size: 14px;
   }

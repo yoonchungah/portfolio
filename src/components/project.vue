@@ -8,7 +8,8 @@
           <section class="project_box geul_project">
             <article class="project_ex">
               <h2 class="pj_title">글항아리</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">출판사 글항아리를 리뉴얼한 반응형 웹사이트입니다. 접근성이 불편했던 기존 사이트를 직관적으로 개선하고자 했으며, db연결과 데이터 바인딩을 통해 각 컨텐츠와 서브페이지를 불러오는 작업을 마친 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 구성
                   <span>반응형웹 + main +sub +db연결<br>(기업소개/책페이지/게시판/로그인)</span>
@@ -25,7 +26,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">01/<span>WEB</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -35,7 +36,8 @@
           <section class="project_box eri_project">
             <article class="project_ex">
               <h2 class="pj_title">에리제론</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">비건 브랜드 에리제론을 리뉴얼한 웹사이트입니다. 반응형 사이트로 개선하여 웹 접근성을 높였으며, db연결과 데이터 바인딩을 통해 각 컨텐츠와 서브페이지를 불러오는 작업을 마친 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 구성
                   <span>반응형웹 + main +sub +db연결<br>(기업소개/상품페이지/게시판/로그인)</span>
@@ -52,7 +54,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">02/<span>WEB</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -62,7 +64,8 @@
           <section class="project_box team_project">
             <article class="project_ex">
               <h2 class="pj_title">장욱진미술관 팀 프로젝트</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">장욱진 미술관 사이트를 국립중앙박물관, 양주시립민복진미술관 등 래퍼런스 사이트를 참고하여 리뉴얼한 팀프로젝트 웹사이트입니다. db연결과 데이터 바인딩을 통해 각 컨텐츠와 서브페이지를 불러오는 작업을 마친 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 개요
                   <span>미술관 사이트 웹버전, 모바일버전</span>
@@ -79,7 +82,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">03/<span>WEB</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -89,7 +92,8 @@
           <section class="project_box dosirak_cloning">
             <article class="project_ex">
               <h2 class="pj_title">도시락통</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">도시락통 사이트를 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 구성
                   <span>반응형웹 + main</span>
@@ -106,7 +110,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">04/<span>CLONING</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -116,7 +120,8 @@
           <section class="project_box shouse_cloning">
             <article class="project_ex">
               <h2 class="pj_title">싱그러운 집</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">싱그러운 집 사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 구성
                   <span>반응형웹 + main</span>
@@ -133,7 +138,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">05/<span>CLONING</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -143,7 +148,8 @@
           <section class="project_box richmond_cloning">
             <article class="project_ex">
               <h2 class="pj_title">더리치몬드 평창</h2>
-              <ul class="pj_menu mt40">
+              <div class="pj_cont">더리치몬드 평창사이트를 웹접근성과 마크업에 중점을 두고 클론코딩한 반응형 사이트입니다.</div>
+              <ul class="pj_menu">
                 <li>
                   프로젝트 구성
                   <span>반응형웹 + main</span>
@@ -160,7 +166,7 @@
             </article>
             <article class="project_view">
               <h2 class="pj_num">06/<span>CLONING</span></h2>
-              <ul class="server_menu mt40">
+              <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
@@ -180,275 +186,27 @@ import {onMounted}  from 'vue'
         let projectBox = document.querySelectorAll('.project_box'); 
         let siteLink = document.querySelectorAll('.site_link');
 
+        
         for(let j=0; j<projectBox.length; j++){
           projectBox[j].addEventListener('mouseenter',()=>{
             projectBox[j].classList.add("pj_active");
-            projectBox[j].style.transform = 'rotateX(0deg)', 'translateY(0)';
-            projectBox[j].style.paddingTop = '2%';
-            projectBox[j].style.paddingBottom = '10%';
-            projectBox[j].style.transition = 'transform 1s , top 1s ';
             for(let k=0; k<siteLink.length; k++){
               siteLink[k].classList.add("lk_active");
             }
           }),
+
           projectBox[j].addEventListener('mouseleave',()=>{
             projectBox[j].classList.remove("pj_active");
-            projectBox[j].style.transform = 'rotateX(-5deg)', 'translateY(1px)';
-            projectBox[j].style.paddingTop = '6%';
-            projectBox[j].style.paddingTop = '80px';
-            projectBox[j].style.paddingBottom = '6%';
-            projectBox[j].style.paddingBottom = '80px';
             for(let k=0; k<siteLink.length; k++){
               siteLink[k].classList.remove("lk_active");
             }
           })
         }
-         
 
       })
     }
   };
 </script>
-<style scoped>
- #Project{
-    width: 100%;
-    height: 100%;
-  }
-  .project_wrap{
-    padding-top:100px;
-    padding-bottom:100px;
-  }
-  /* title */
-  .project_wrap>h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .project_cont>p{
-    font-size: 40px;
-  }
-  /* project */
-  .project_box_wrap{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    perspective: 700px;
-  }
-  .project_box{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 6%;
-    padding-top: 80px;
-    padding-bottom: 6%;
-    padding-bottom: 80px;
-    box-sizing: border-box;
-    background-color: #1D1D1D;
-    color: #FF6475;
-    transform-style: preserve-3d;
-    transform: rotateX(-5deg) translateY(1px);
-    border-radius: 23px;
-    border-top: 10px solid #FF6475;
-    /* height: 450px; */
-  }
-  .project_box.geul_project{
-    top:0;
-  }
-  .project_box.eri_project{
-    top:20%;
-    top:180px;
-  } 
-  .project_box.team_project{
-    top:360px;
-  } 
-  .project_box.dosirak_cloning{
-    top:530px;
-  } 
-  .project_box.shouse_cloning{
-    top:700px;
-  } 
-  .project_box.richmond_cloning{
-    top:870px;
-  } 
-
-  .project_box.pj_active{
-    background-color: #FF6475;
-    color: #1D1D1D;
-    border-top: 10px solid #1D1D1D;
-  }
-
-  .project_box.geul_project:hover{
-    top:-19.5%;
-  }
-  .project_box.eri_project:hover{
-    top:-1.5%;
-  }
-  .project_box.team_project:hover{
-    top:16.5%;
-  }
-  .project_box.dosirak_cloning:hover{
-    top:33.5%;
-  }
-  .project_box.shouse_cloning:hover{
-    top:50.5%;
-  }
-  .project_box.richmond_cloning:hover{
-    top:66.5%;
-  }
-  /* 프로젝트 왼쪽 */
-  .project_ex{
-    width: 80%;
-  }
-  .pj_title{
-    font-size: 40px;
-    font-weight: bold;
-  }
-  .pj_menu li{
-    display: flex;
-    font-size: 18px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  .pj_menu li:last-child{
-    margin-bottom: 0;
-  }
-  .pj_menu li span{
-    font-weight: normal;
-    margin-left: 3%;
-  }
-
-  /* 프로젝트 오른쪽 */
-  .project_view{
-    width: 18%;
-    text-align: right;
-  }
-  .project_view .pj_num{
-    font-size: 30px;
-  }
-  .project_view .pj_num span{
-    margin-left: 5%;
-  }
-  .server_menu li{
-    margin-bottom: 10px;
-  }
-  .server_menu li:last-child{
-    margin-bottom: 0;
-  }
-  .site_link{
-    color: #FF6475;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .site_link.lk_active{
-    color: #1D1D1D;
-  }
-  .site_link span{
-    margin-left: 2%;
-  }
-
-
-
-  @media (max-width:1280px) {
-   /* 프로젝트 왼쪽 */
-  .project_ex{
-    width: 70%;
-  }
-  /* 프로젝트 오른쪽 */
-  .project_view{
-    width: 28%;
-  }
-  .project_wrap>h2{
-    font-size: 1.925rem;
-  }
-  .project_cont>p{
-    font-size: 1.925rem;
-  }
-  .pj_title{
-    font-size: 1.925rem;
-  }
-  .project_view .pj_num{
-    font-size: 1.5rem;
-  }
-  .site_link{
-    font-size: 16px;
-  }
-  .pj_menu li{
-    font-size: 16px;
-  }
-  /* 높이 */
-  /* .project_box.geul_project{
-    top:3%;
-  }
-  .project_box.eri_project{
-    top:20%;
-  } 
-  .project_box.team_project{
-    top:36%;
-  } 
-  .project_box.dosirak_cloning{
-    top:52%;
-  } 
-  .project_box.shouse_cloning{
-    top:68%;
-  } 
-  .project_box.richmond_cloning{
-    top:83%;
-  } */
-  /* 호버 */
-  .project_box.geul_project:hover{
-    top:-14%;
-  }
-  .project_box.eri_project:hover{
-    top:3%;
-    top:6%;
-  }
-  .project_box.team_project:hover{
-    top:19%;
-    top:22%;
-  }
-  .project_box.dosirak_cloning:hover{
-    top:35%;
-    top:38%;
-  }
-  .project_box.shouse_cloning:hover{
-    top:51%;
-    top:54%;
-  }
-  .project_box.richmond_cloning:hover{
-    top:66%;
-    top:69%;
-  }
-}
-@media (max-width:1000px) {
-  .project_box{
-      width: 100%;
-      height: 430px;
-    }
-  .project_box_wrap{
-    height: 100vh;
-    width: 90vw;
-    left: 50%;
-    transform: translate(-50%);
-  }
-}
-@media (max-width:800px) {
-  .project_wrap>h2{
-    font-size: 5.5vw;
-  }
-  .project_cont>p{
-    display:none;
-  }
-  .pj_title{
-    font-size: 5.5vw;
-  }
-  /* .project_view .pj_num{
-    font-size: 2vw;
-  } */
-  .project_view .pj_num span{
-  display:none;
-}
-}
-</style>
+<!-- <style scoped>
+ 
+</style> -->

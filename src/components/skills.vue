@@ -1,38 +1,38 @@
 <template>
-  <div id="Skills">
-    <div class="skills_wrap w1440">
+  <section id="Skills">
+    <article class="skills_wrap w1440">
       <h2>skills</h2>
       <div class="skills_cont mt40">
         <p>저는 이런 것들을 다룰 수 있어요!</p>
         <div class="skills_icons_wrap">
-          <div class="skills_icons">
-            <div class="skill_box mt40">
+          <ul class="skills_icons">
+            <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons1.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons2.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons3.png" alt="icon"></div>
-            </div>
-            <div class="skill_box mt40">
+            </li>
+            <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons4.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons5.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons6.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons7.png" alt="icon"></div>
-            </div>
-            <div class="skill_box mt40">
+            </li>
+            <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons8.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons9.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons10.png" alt="icon"></div>
-            </div>
-            <div class="skill_box mt40">
+            </li>
+            <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons11.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons12.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons13.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons14.png" alt="icon"></div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 <script>
 import {onMounted}  from 'vue'

@@ -26,7 +26,7 @@
     height: 100vh;
     background-color: #f3f3f3;
   }
-  
+
 /* 인트로 내용 */
   .intro_cont{
     display: flex;
@@ -53,6 +53,10 @@
 
 
 @media (max-width:1280px) {
+  #Intro{
+    height: 100%;
+    padding-bottom: 10%;
+  }
   .intro_title li{
     font-size: 3.8rem;
   }
@@ -61,10 +65,6 @@
   }
 }
 @media (max-width:800px) {
-  #Intro{
-    height: 100%;
-    padding-bottom:40px;
-  }
   .intro_cont{
     flex-direction: column;
   }

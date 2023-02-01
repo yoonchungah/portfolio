@@ -133,7 +133,6 @@
   }
   .about_wrap{
     padding-top:8%;
-    padding-bottom:8%;
   }
   .about_wrap>h2{
     font-size: 40px;

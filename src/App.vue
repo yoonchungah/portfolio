@@ -151,7 +151,7 @@ export default {
 /* 웹 네비게이션 */
 #main_menu{
   position: fixed;
-  top:calc(100% - 100px); left: 50%;
+  top:90%; left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
   width: 100%;
@@ -159,7 +159,6 @@ export default {
   transition: top 2s;
   z-index: 9999;
   background-color: #0a0a0a;
-  /* height: 100px; */
   height: 10%;
 }
 #main_menu.menuFixed{
@@ -236,6 +235,10 @@ html{
   }
   .mt100{
     margin-top: 60px;
+  }
+  #main_menu{
+    top:79%;
+    height: 5%;
   }
   #main_menu>ul{
     max-width: 100%;

@@ -24,6 +24,8 @@
   <project />
   <javascript />
   <contact />
+
+  <div id="topbtn"><img src="../src/assets/img/topbtn.png" alt="top"></div>
 </template>
 
 <script>
@@ -65,13 +67,25 @@ export default {
     setup(){
       onMounted(() => {
         const menu = document.getElementById("main_menu");
+        let topBtn =  document.querySelector('#topbtn');
+
+
         window.addEventListener("scroll",()=>{
           const scrollY = window.pageYOffset;
           if( Intro.offsetTop < scrollY ){
             menu.classList.add('menuFixed');
+
+            topBtn.classList.add('topbtnactive');
           } else{
             menu.classList.remove('menuFixed');
+
+            topBtn.classList.remove('topbtnactive')
           }
+        })
+
+        topBtn.addEventListener('click',(e)=>{
+          e.preventDefault();
+          window.scrollTo({ top:0, behavior:'smooth'});
         })
 
         let header = document.querySelector('.header');
@@ -83,6 +97,8 @@ export default {
             span[i].classList.toggle('span_active');
           }
         });
+
+
       })
 
       function gosection(e){
@@ -94,7 +110,9 @@ export default {
         sec.scrollIntoView({behavior : "smooth"});
         }
       }
+
       
+
       return{
         gosection,
       }
@@ -210,7 +228,21 @@ html{
   margin-top: 40px;
 }
 
-
+/* 탑버튼 */
+#topbtn{
+  display: none;
+  position: fixed;
+  right: 1%;
+  bottom: 1%;
+  opacity: 0;
+  transition: all 2s;
+  cursor: pointer;
+}
+#topbtn.topbtnactive{
+  display: none;
+  bottom: 7%;
+  opacity: 1;
+}
 /* 미디어 */
 @media (max-width:1680px) {
   .w1440{
@@ -288,9 +320,16 @@ html{
   .header_wrap{
     display: block;
   }
-
   .ham_nav{
     z-index: 99999;
+  }
+
+    /* 탑버튼 */
+  #topbtn{
+    display: block;
+  }
+  #topbtn.topbtnactive{
+    display: block;
   }
 }
 @media (max-width:768px) {
@@ -303,6 +342,9 @@ html{
   }
   .mt40{
     margin-top: 20px;
+  }
+  #topbtn img{
+    width: 80%;
   }
 }
 @media (max-width:380px) {

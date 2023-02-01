@@ -3,8 +3,8 @@
   height: 100%;
 }
 .project_wrap{
-  padding-top:100px;
-  /* padding-bottom:100px; */
+  padding-top:8%;
+  padding-bottom:8%;
 }
 /* title */
 .project_wrap>h2{
@@ -18,7 +18,7 @@
 /* project */
 .project_box_wrap{
   position: relative;
-  height: 800px;
+  height: 100vh;
   width: 100%;
   perspective: 700px;
 }
@@ -148,6 +148,9 @@
 }
 
 @media (max-width:1280px) {
+  .project_box_wrap{
+    height: 900px;
+  }
   /* 프로젝트 왼쪽 */
   .project_ex{
     width: 70%;
@@ -178,7 +181,6 @@
     font-size: 15px;
   }
 }
-
 @media (max-width:1000px) {
   .project_box_wrap{
     width: 90vw;
@@ -191,9 +193,8 @@
 }
 
 @media (max-width:800px) {
-  .project_wrap{
-    padding-top:50px;
-    /* padding-bottom:30px; */
+  .project_box_wrap{
+    height: 800px;
   }
   .project_wrap>h2{
     font-size: 5.5vw;
@@ -285,9 +286,8 @@
   }
 }
 @media (max-width:500px){
-  .project_wrap{
-    padding-top:50px;
-    /* padding-bottom:30px; */
+  .project_box_wrap{
+    height: 780px;
   }
   .server_menu{
     margin-top: 10px;
@@ -298,6 +298,9 @@
 }
 
 @media (max-width:420px){
+  .project_box_wrap{
+    height: 650px;
+  }
   .pj_title{
     font-size: 1.5rem;
   }
@@ -343,6 +346,9 @@
 }
 
 @media (max-width:360px){
+  .project_box_wrap{
+    height: 610px;
+  }
   .pj_cont{
     margin-top: 20px;
   }

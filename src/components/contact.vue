@@ -17,8 +17,11 @@
     background-color: #0A0A0A;
     color: #f3f3f3;
   }
+  .contact_wrap{
+    padding-top:8%;
+    padding-bottom:8%;
+  }
   .contact_wrap>h2{
-    padding-top: 100px;
     font-size: 120px;
     text-transform: uppercase;
   }
@@ -30,7 +33,6 @@
   @media (max-width:1280px) {
   .contact_wrap>h2{    
       font-size: 5.2rem;
-      padding-top: 60px;
     }
   }
     @media (max-width:800px) {

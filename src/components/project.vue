@@ -4,7 +4,7 @@
       <h2>project</h2>
       <div class="project_cont mt40">
         <p>지금까지 작업한 프로젝트를 소개합니다!</p>
-        <div class="project_box_wrap mt100">
+        <div class="project_box_wrap mt40">
           <section class="project_box geul_project">
             <article class="project_ex">
               <h2 class="pj_title">글항아리</h2>
@@ -111,7 +111,7 @@
             <article class="project_view">
               <h2 class="pj_num">04/<span>CLONING</span></h2>
               <ul class="server_menu ">
-                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
+                <li><a class="site_link" href="http://cloning96.dothome.co.kr/dosirak_cloning/index.html" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
@@ -139,7 +139,7 @@
             <article class="project_view">
               <h2 class="pj_num">05/<span>CLONING</span></h2>
               <ul class="server_menu ">
-                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
+                <li><a class="site_link" href="http://cloning96.dothome.co.kr/shouse_cloning/index.html" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
@@ -167,7 +167,7 @@
             <article class="project_view">
               <h2 class="pj_num">06/<span>CLONING</span></h2>
               <ul class="server_menu ">
-                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
+                <li><a class="site_link" href="http://cloning96.dothome.co.kr/richmond_cloning/index1.html" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
               </ul>

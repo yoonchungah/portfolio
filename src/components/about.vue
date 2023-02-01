@@ -7,9 +7,9 @@
           <div class="profile_img mt40">
             <img src="../assets/img/profile_img.png" alt="profile_img">
           </div>
-          <div class="resume mt40">이력서 보기</div>
+          <div class="resume mt40" @click="openResume = true">자기소개서</div>
           <div class="profile_cont mt40">
-            <p>'왜?'</p>
+            <p>‘왜?’</p>
             이유가 있기 때문에 결과도 있다고 생각합니다.<br>
             항상 의문을 갖고 해답을 찾기 위해 노력하겠습니다.
           </div>
@@ -29,9 +29,9 @@
             <div class="about_txt mt40">
               <h4 class="about_txt_title">학력</h4>
               <div class="about_txt_cont mt40">
-                <p>2011.03 - 2014.02 경민 고등학교 졸업</p>
-                <p>2015.03 - 2018.02 인덕대학교 일본어 학과 졸업</p>
                 <p>2018.10 - 2020.01 일본 아카몽카이 어학원 졸업</p>
+                <p>2015.03 - 2018.02 인덕대학교 일본어 학과 졸업</p>
+                <p>2011.03 - 2014.02 경민 고등학교 졸업</p>
               </div>
             </div>
             <div class="about_txt">
@@ -109,6 +109,17 @@
             </h4>
           </div>
         </div>
+        <!-- 이력서 모달 -->
+        <div class="modal_pop_Resume" v-if="openResume == true">
+          <div class="modal_Resume_bg">
+            <div class="Resume_close_btn" @click="openResume = false">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="modal_Resume_img_box">
+            </div>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -121,8 +132,8 @@
     color: #f3f3f3;
   }
   .about_wrap{
-    padding-top:6%;
-    padding-bottom:6%;
+    padding-top:8%;
+    padding-bottom:8%;
   }
   .about_wrap>h2{
     font-size: 40px;
@@ -148,11 +159,13 @@
     font-size: 1.125rem;
     cursor: pointer;
     transition: background-color 1s;
+    box-sizing: border-box;
   }
   .resume.resume_active{
     background-color: #f3f3f3;
     color: #0a0a0a;
-    border: 0;
+    border: 1px solid #0a0a0a;
+    box-sizing: border-box;
   }
   .profile_cont p{
     font-size: 40px;
@@ -317,7 +330,6 @@
     margin: 0 auto;
   }
   .modal_cont p{
-    font-size: 18px;
     color: #0a0a0a;
   }
 
@@ -376,6 +388,62 @@
   }
 
 
+  /* 이력서 모달 */
+  .modal_pop_Resume{
+    position: fixed;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99999;
+    height: 90vh;
+    width: 100%;
+    max-width: 800px;
+  }
+  .modal_Resume_bg{
+    box-sizing: border-box;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .Resume_close_btn{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    z-index: 99999;
+    right: 12%;
+    top:3%;
+    position: absolute;
+  }
+  .Resume_close_btn span{
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #0a0a0a;
+  }
+  .Resume_close_btn span:nth-child(1){
+    display: block;
+    transform:rotate(46deg) translate(3px, 5px);
+  }
+  .Resume_close_btn span:nth-child(2){
+    margin: 9px 0;
+    display: block;
+    transform:rotate(312deg) translate(3px, -6px);
+  }
+  .modal_Resume_img_box{
+    position: absolute;
+    top:50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    background-image: url(../assets/img/chung_resume.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+  }
 /* 반응형 */
 @media (max-width:1280px){
   .about_wrap>h2{
@@ -385,7 +453,7 @@
     font-size: 1.925rem;
   }
   .about_txt{
-    padding-bottom: 60px;
+    padding-bottom:3.25rem;
   }
 }
 @media (max-width:1000px) {
@@ -410,9 +478,6 @@
   .about_txt_wrap{
     padding-left: 0;
   }
-.about_txt{
-  padding-bottom: 80px;
-}
 }
 @media (max-width:800px) {
   .about_wrap>h2{
@@ -421,6 +486,19 @@
  .modal_bg{
   width: 80vw;
  }
+ /* 이력서 모달 */
+  .modal_pop_Resume{
+    padding: 5%;
+  }
+  .modal_Resume_bg{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .modal_Resume_img_box{
+    background-size: 100% 100%;
+  }
 }
 @media (max-width:450px){
   .profile_icons_wrap{
@@ -429,6 +507,13 @@
   .profile_icons{
     width: 130px;
     height: 130px;
+  }
+}
+@media (max-width:380px){
+  .profile_icons{
+    width: 50%;
+    height: 50%;
+    border-radius: 100%;
   }
 }
 </style>
@@ -442,6 +527,7 @@ export default {
     return {
       openModalFirst : false,
       openModalLast : false,
+      openResume : false,
     }
   },
 

@@ -40,17 +40,14 @@ import {onMounted}  from 'vue'
     setup(){
       onMounted(() => {
         window.addEventListener("scroll",()=>{
+
           const skillBox = document.querySelectorAll('.skill_box');
-          
 
           for( let i = 0 ; i <skillBox.length; i++){ 
             if( Skills.offsetTop-100 < scrollY ){
-              skillBox[i].style.opacity = 1;
-              skillBox[i].style.transition = 'all 2s';
-              skillBox[i].style.transform = 'scale(0.8)';
+              skillBox[i].classList.add("skill_active");
             } else{
-              skillBox[i].style.opacity = 0;
-              skillBox[i].style.transform = 'scale(0.5)';
+              skillBox[i].classList.remove("skill_active");
             }
           }
           
@@ -59,18 +56,14 @@ import {onMounted}  from 'vue'
         const skillIcon = document.querySelectorAll('.skill_icon');
         for(let j=0; j<skillIcon.length; j++){
           skillIcon[j].addEventListener('mouseenter',()=>{
-            skillIcon[j].style.transform = 'scale(1.5)';
-            skillIcon[j].style.transition = 'transform 1s';
+            skillIcon[j].classList.add("skill_icon_active");
           }),
           skillIcon[j].addEventListener('mouseleave',()=>{
-            skillIcon[j].style.transform = 'scale(1)';
+            skillIcon[j].classList.remove("skill_icon_active");
           })
         }
 
       })
-
-
-
     }
   };
 </script>
@@ -82,11 +75,11 @@ import {onMounted}  from 'vue'
     color: #f3f3f3;
   }
   .skills_wrap{
-    padding-top:6%;
-    padding-bottom:6%;
+    padding-top:8%;
+    padding-bottom:8%;
   }
   /* title */
-  .skills_wrap h2{
+  .skills_wrap>h2{
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -104,9 +97,62 @@ import {onMounted}  from 'vue'
     display: flex;
     justify-content: space-around;
     opacity: 0;
-    transform: scale(0.5);
     cursor: pointer;
+    transition: all 2s;
+    text-align: center;
   }
+  .skill_box.skill_active{
+    opacity: 1;
+    transition: all 2s;
+  }
+  .skill_icon{
+    transition: all 1s;
+    text-align: center;
+  }
+  .skill_icon img{
+    width: 80%;
+  }
+  .skill_icon.skill_icon_active{
+    transform: scale(1.3);
+  }
+
+  @media (max-width:1280px){
+    /* title */
+    .skills_wrap>h2{
+      font-size: 1.925rem;
+    }
+  }
+  @media (max-width:800px){
+    /* title */
+    .skills_wrap>h2{
+      font-size: 5.5vw;
+    }
+    .skills_cont>p{
+      display: none;
+    }
+    .skill_box{
+      justify-content: space-between;
+    }
+
+    .skill_icon{
+      transform: none;
+    }
+    .skills_icons{
+      width: 100%;
+      height: 100%;
+    }
+    .skill_icon.skill_icon_active{
+      transform: none;
+  }
+  }
+  @media (max-width:500px){
+    .skill_box:nth-child(odd) .skill_icon{
+      width: 70%;
+  }
+  .skill_box:nth-child(odd) .skill_icon img{
+    width: 60%;
+  }
+}
 </style>
 
 

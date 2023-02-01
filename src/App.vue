@@ -13,7 +13,7 @@
       <li v-on:click="gosection" data-target="Intro" class="gotosce">INTRO</li>
       <li v-on:click="gosection" data-target="About" class="gotosce">ABOUT ME</li>
       <li v-on:click="gosection" data-target="Skills" class="gotosce">SKILLS</li>
-      <!-- <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li> -->
+      <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li>
       <li v-on:click="gosection" data-target="Javascript" class="gotosce">JAVASCRIPT</li>
       <li v-on:click="gosection" data-target="Contact" class="gotosce">CONTACT</li>
     </ul>
@@ -21,7 +21,7 @@
   <intro />
   <about />
   <skills />
-  <!-- <project /> -->
+  <project />
   <javascript />
   <contact />
 </template>
@@ -30,7 +30,7 @@
 import intro from './components/intro.vue';
 import about from './components/about.vue';
 import skills from './components/skills.vue';
-// import project from './components/project.vue';
+import project from './components/project.vue';
 import javascript from './components/javascript.vue';
 import contact from './components/contact.vue';
 
@@ -44,7 +44,7 @@ export default {
     intro,
     about,
     skills,
-    // project,
+    project,
     javascript,
     contact,
 
@@ -159,7 +159,8 @@ export default {
   transition: top 2s;
   z-index: 9999;
   background-color: #0a0a0a;
-  height: 100px;
+  /* height: 100px; */
+  height: 10%;
 }
 #main_menu.menuFixed{
   position: fixed;
@@ -221,6 +222,7 @@ html{
   }
   #main_menu{
     max-width: 90%;
+    height: 8%;
   }
   #main_menu>ul{
     max-width: 80%;
@@ -292,6 +294,12 @@ html{
   /* 공통 css */
   html{
     font-size: 16px;
+  }
+  .mt100{
+    margin-top: 40px;
+  }
+  .mt40{
+    margin-top: 20px;
   }
 }
 @media (max-width:380px) {

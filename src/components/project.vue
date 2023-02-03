@@ -183,25 +183,52 @@ import {onMounted}  from 'vue'
   export default{
     setup(){
       onMounted(() => {
+        let minWidth = 800;
         let projectBox = document.querySelectorAll('.project_box'); 
         let siteLink = document.querySelectorAll('.site_link');
 
+        function resizeWidth(){
+          if( minWidth < window.innerWidth ){
+            for(let j=0; j<projectBox.length; j++){
+            projectBox[j].addEventListener('mouseenter',()=>{
+              projectBox[j].classList.add("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.add("lk_active");
+              }
+            }),
+            projectBox[j].addEventListener('mouseleave',()=>{
+              projectBox[j].classList.remove("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.remove("lk_active");
+                }
+              })
+            }
+        } else{
+          // projectBox[j].classList.remove("pj_active");
+          for(let j=0; j<projectBox.length; j++){
+            projectBox[j].removeEventListener('mouseenter',()=>{
+              projectBox[j].classList.add("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.add("lk_active");
+              }
+            }),
+            projectBox[j].removeEventListener('mouseleave',()=>{
+              projectBox[j].classList.remove("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.remove("lk_active");
+                }
+              })
+          }
         
-        for(let j=0; j<projectBox.length; j++){
-          projectBox[j].addEventListener('mouseenter',()=>{
-            projectBox[j].classList.add("pj_active");
-            for(let k=0; k<siteLink.length; k++){
-              siteLink[k].classList.add("lk_active");
-            }
-          }),
-
-          projectBox[j].addEventListener('mouseleave',()=>{
-            projectBox[j].classList.remove("pj_active");
-            for(let k=0; k<siteLink.length; k++){
-              siteLink[k].classList.remove("lk_active");
-            }
-          })
         }
+      }
+
+      window.addEventListener('resize', function() {
+        resizeWidth();
+      });
+      resizeWidth();
+        
+
 
       })
     }
@@ -278,24 +305,25 @@ import {onMounted}  from 'vue'
   border-top: 10px solid #1D1D1D;
   transform: rotateX(0deg);
 }
-.project_box.geul_project:hover{
+.project_box.pj_active:nth-child(1){
   top:-280px;
 }
-.project_box.eri_project:hover{
+.project_box.pj_active:nth-child(2){
   top:-160px;
 }
-.project_box.team_project:hover{
+.project_box.pj_active:nth-child(3){
   top:-40px;
 }
-.project_box.dosirak_cloning:hover{
+.project_box.pj_active:nth-child(4){
   top:80px;
 }
-.project_box.shouse_cloning:hover{
+.project_box.pj_active:nth-child(5){
   top:200px;
 }
-.project_box.richmond_cloning:hover{
+.project_box.pj_active:nth-child(6){
   top:320px;
 }
+
 /* 프로젝트 왼쪽 */
 .project_ex{
   width: 80%;
@@ -476,22 +504,22 @@ import {onMounted}  from 'vue'
   } 
 
   /* 호버800 */
-  .project_box.geul_project:hover{
+  .project_box.pj_active:nth-child(1){
     top:-180px;
   }
-  .project_box.eri_project:hover{
+  .project_box.pj_active:nth-child(2){
     top:-60px;
   }
-  .project_box.team_project:hover{
+  .project_box.pj_active:nth-child(3){
     top:60px;
   }
-  .project_box.dosirak_cloning:hover{
+  .project_box.pj_active:nth-child(4){
     top:180px;
   }
-  .project_box.shouse_cloning:hover{
+  .project_box.pj_active:nth-child(5){
     top:300px;
   }
-  .project_box.richmond_cloning:hover{
+  .project_box.pj_active:nth-child(6){
     top:420px;
   }
 }
@@ -538,19 +566,19 @@ import {onMounted}  from 'vue'
   } 
 
   /* 호버420 */
-  .project_box.eri_project:hover{
+  .project_box.pj_active:nth-child(2){
     top:-90px;
   }
-  .project_box.team_project:hover{
+  .project_box.pj_active:nth-child(3){
     top:0px;
   }
-  .project_box.dosirak_cloning:hover{
+  .project_box.pj_active:nth-child(4){
     top:150px;
   }
-  .project_box.shouse_cloning:hover{
+  .project_box.pj_active:nth-child(5){
     top:240px;
   }
-  .project_box.richmond_cloning:hover{
+  .project_box.pj_active:nth-child(6){
     top:330px;
   }
 }
@@ -596,22 +624,22 @@ import {onMounted}  from 'vue'
   } 
 
   /* 호버360 */
-  .project_box.geul_project:hover{
+  .project_box.pj_active:nth-child(1){
     top:-250px;
   }
-  .project_box.eri_project:hover{
+  .project_box.pj_active:nth-child(2){
     top:-180px;
   }
-  .project_box.team_project:hover{
+  .project_box.pj_active:nth-child(3){
     top:-130px;
   }
-  .project_box.dosirak_cloning:hover{
-    top:0;
+  .project_box.pj_active:nth-child(4){
+    top:0px;
   }
-  .project_box.shouse_cloning:hover{
+  .project_box.pj_active:nth-child(5){
     top:70px;
   }
-  .project_box.richmond_cloning:hover{
+  .project_box.pj_active:nth-child(6){
     top:140px;
   }
 } 

@@ -14,7 +14,7 @@
       <li v-on:click="gosection" data-target="About" class="gotosce">ABOUT ME</li>
       <li v-on:click="gosection" data-target="Skills" class="gotosce">SKILLS</li>
       <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li>
-      <li v-on:click="gosection" data-target="Javascript" class="gotosce">TOYPROJECT</li>
+      <li v-on:click="gosection" data-target="Javascript" class="gotosce">TOY PROJECT</li>
       <li v-on:click="gosection" data-target="Contact" class="gotosce">CONTACT</li>
     </ul>
   </nav>

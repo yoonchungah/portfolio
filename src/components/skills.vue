@@ -7,26 +7,26 @@
         <div class="skills_icons_wrap">
           <ul class="skills_icons">
             <li class="skill_box mt40">
-              <div class="skill_icon"><img src="../assets/img/icons1.png" alt="icon"></div>
-              <div class="skill_icon"><img src="../assets/img/icons2.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons5.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons9.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons3.png" alt="icon"></div>
             </li>
             <li class="skill_box mt40">
-              <div class="skill_icon"><img src="../assets/img/icons4.png" alt="icon"></div>
-              <div class="skill_icon"><img src="../assets/img/icons5.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons6.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons10.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons11.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons1.png" alt="icon"></div>
+            </li>
+            <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons7.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons12.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons2.png" alt="icon"></div>
             </li>
             <li class="skill_box mt40">
               <div class="skill_icon"><img src="../assets/img/icons8.png" alt="icon"></div>
-              <div class="skill_icon"><img src="../assets/img/icons9.png" alt="icon"></div>
-              <div class="skill_icon"><img src="../assets/img/icons10.png" alt="icon"></div>
-            </li>
-            <li class="skill_box mt40">
-              <div class="skill_icon"><img src="../assets/img/icons11.png" alt="icon"></div>
-              <div class="skill_icon"><img src="../assets/img/icons12.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons13.png" alt="icon"></div>
               <div class="skill_icon"><img src="../assets/img/icons14.png" alt="icon"></div>
+              <div class="skill_icon"><img src="../assets/img/icons4.png" alt="icon"></div>
             </li>
           </ul>
         </div>

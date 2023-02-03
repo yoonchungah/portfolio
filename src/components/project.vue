@@ -28,8 +28,8 @@
               <h2 class="pj_num">01/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/projectgeulhangari.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>
@@ -56,8 +56,8 @@
               <h2 class="pj_num">02/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://eriproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://www.notion.so/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/project1216.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>
@@ -83,9 +83,9 @@
             <div class="project_view">
               <h2 class="pj_num">03/<span>WEB</span></h2>
               <ul class="server_menu ">
-                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
+                <li><a class="site_link" href="https://teambogoproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/bogo.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>
@@ -113,7 +113,7 @@
               <ul class="server_menu ">
                 <li><a class="site_link" href="http://cloning96.dothome.co.kr/dosirak_cloning/index.html" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/dosirak_cloning.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>
@@ -141,7 +141,7 @@
               <ul class="server_menu ">
                 <li><a class="site_link" href="http://cloning96.dothome.co.kr/shouse_cloning/index.html" target="_blank">VIEW SITE<span>→</span></a></li>
                 <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/shouse_cloning.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>
@@ -168,8 +168,8 @@
               <h2 class="pj_num">06/<span>CLONING</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="http://cloning96.dothome.co.kr/richmond_cloning/index1.html" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">GITHUB<span>→</span></a></li>
+                <li><a class="site_link" href="" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://github.com/yoonchungah/richmond_cloning.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
           </div>

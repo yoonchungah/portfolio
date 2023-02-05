@@ -7,7 +7,7 @@
           <div class="profile_img mt40">
             <img src="../assets/img/profile_img.png" alt="profile_img">
           </div>
-          <div class="resume mt40" @click="openResume = true">자기소개서</div>
+          <div class="resume mt40" @click="openResume = true">이력서 확인</div>
           <div class="profile_cont mt40">
             <p>‘왜?’</p>
             이유가 있기 때문에 결과도 있다고 생각합니다.<br>

@@ -4,9 +4,9 @@
     <h2>toy project</h2>
     <nav class="jscript_box mt40">
       <ul class="jscript mt40">
-        <li><a href="#">숫자맞추기</a></li>
-        <li><a href="#">todolist</a></li>
-        <li><a href="#">뉴스타임즈</a></li>
+        <li class="toy1"><a href="#"></a></li>
+        <li class="toy2"><a href="#"></a></li>
+        <li class="toy3"><a href="#"></a></li>
       </ul>
     </nav>
    </article>
@@ -36,7 +36,24 @@
   width: 32%;
   height: 400px;
   border-radius: 8px;
-  background-color: #ccc;
+}
+.jscript>li{
+  width: 32%;
+  height: 400px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.jscript>li.toy1{
+  background-image: url(../assets/img/toy1.png);
+}
+.jscript>li.toy2{
+  background-image: url(../assets/img/toy2.png);
+}
+.jscript>li.toy3{
+  background-image: url(../assets/img/toy3.png);
 }
 @media (max-width:1280px) {
  .script_wrap>h2{
@@ -69,5 +86,8 @@
  .jscript>li:last-child{
    margin-bottom: 0;
  }
+ .jscript>li{
+  background-position: top center;
+}
 }
 </style>

@@ -55,6 +55,11 @@
 .jscript>li.toy3{
   background-image: url(../assets/img/toy3.png);
 }
+.jscript>li>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width:1280px) {
  .script_wrap>h2{
   font-size: 1.925rem;

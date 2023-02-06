@@ -28,7 +28,7 @@
               <h2 class="pj_num">01/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://geulhangariproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://capable-single-497.notion.site/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/projectgeulhangari.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>

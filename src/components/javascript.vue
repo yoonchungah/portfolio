@@ -4,9 +4,9 @@
     <h2>toy project</h2>
     <nav class="jscript_box mt40">
       <ul class="jscript mt40">
-        <li class="toy1"><a href="http://toys96.dothome.co.kr/toy1/index.html"></a></li>
-        <li class="toy2"><a href="http://toys96.dothome.co.kr/toy2/index.html"></a></li>
-        <li class="toy3"><a href="http://toys96.dothome.co.kr/toy2/index.html"></a></li>
+        <li class="toy1"><a href="http://toys96.dothome.co.kr/toy1/index.html" target="_blank"></a></li>
+        <li class="toy2"><a href="http://toys96.dothome.co.kr/toy2/index.html" target="_blank"></a></li>
+        <li class="toy3"><a href="http://toys96.dothome.co.kr/toy2/index.html" target="_blank"></a></li>
       </ul>
     </nav>
    </article>

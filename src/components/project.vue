@@ -188,7 +188,6 @@ import {onMounted}  from 'vue'
         let siteLink = document.querySelectorAll('.site_link');
 
         function resizeWidth(){
-          if( minWidth < window.innerWidth ){
             for(let j=0; j<projectBox.length; j++){
             projectBox[j].addEventListener('mouseenter',()=>{
               projectBox[j].classList.add("pj_active");
@@ -203,7 +202,8 @@ import {onMounted}  from 'vue'
                 }
               })
             }
-        } else{
+          }
+          function resizeWidth2(){
           // projectBox[j].classList.remove("pj_active");
           for(let j=0; j<projectBox.length; j++){
             projectBox[j].removeEventListener('mouseenter',()=>{
@@ -218,15 +218,27 @@ import {onMounted}  from 'vue'
                 siteLink[k].classList.remove("lk_active");
                 }
               })
-          }
         
         }
       }
 
+
+      
       window.addEventListener('resize', function() {
-        resizeWidth();
+        if( minWidth < window.innerWidth ){
+          resizeWidth();
+        } else if (minWidth >= window.innerWidth) {
+          resizeWidth2();
+        }
       });
-      resizeWidth();
+
+      window.onload = function (){
+        if( minWidth < window.innerWidth ){
+          resizeWidth();
+        } else if (minWidth >= window.innerWidth){
+          resizeWidth2();
+        }
+      }
         
 
 

@@ -28,7 +28,7 @@
               <h2 class="pj_num">01/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://geulhangariproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://capable-single-497.notion.site/7544db057e9d497d997d4716196082d9" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/projectgeulhangari.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
@@ -56,7 +56,7 @@
               <h2 class="pj_num">02/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://eriproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%97%90%EB%A6%AC%EC%A0%9C%EB%A1%A0" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/project1216.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
@@ -84,7 +84,7 @@
               <h2 class="pj_num">03/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://teambogoproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%9E%A5%EC%9A%B1%EC%A7%84-%EB%AF%B8%EC%88%A0%EA%B4%80" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/bogo.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>

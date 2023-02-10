@@ -183,7 +183,6 @@ import {onMounted}  from 'vue'
   export default{
     setup(){
       onMounted(() => {
-        let minWidth = 800;
         let projectBox = document.querySelectorAll('.project_box'); 
         let siteLink = document.querySelectorAll('.site_link');
 
@@ -204,20 +203,23 @@ import {onMounted}  from 'vue'
             }
           }
           function resizeWidth2(){
-          // projectBox[j].classList.remove("pj_active");
           for(let j=0; j<projectBox.length; j++){
-            projectBox[j].removeEventListener('mouseenter',()=>{
+            projectBox[j].addEventListener('click',(target)=>{
+              if(target.currentTarget.classList.contains("pj_active")){
+                target.currentTarget.addEventListener('click',(target)=>{
+                  target.currentTarget.classList.toggle("pj_active")
+                })
+              }
+              for(let k=0; k<projectBox.length; k++){
+                projectBox[k].classList.remove("pj_active");
+              }
               projectBox[j].classList.add("pj_active");
+              
+              
               for(let k=0; k<siteLink.length; k++){
                 siteLink[k].classList.add("lk_active");
               }
-            }),
-            projectBox[j].removeEventListener('mouseleave',()=>{
-              projectBox[j].classList.remove("pj_active");
-              for(let k=0; k<siteLink.length; k++){
-                siteLink[k].classList.remove("lk_active");
-                }
-              })
+            })
         
         }
       }
@@ -225,17 +227,18 @@ import {onMounted}  from 'vue'
 
       
       window.addEventListener('resize', function() {
-        if( minWidth < window.innerWidth ){
+        if( window.innerWidth > 800 ){
           resizeWidth();
-        } else if (minWidth >= window.innerWidth) {
+        } else if ( window.innerWidth < 800 ) {
+          console.log(window.innerWidth)
           resizeWidth2();
         }
       });
 
       window.onload = function (){
-        if( minWidth < window.innerWidth ){
+        if( window.innerWidth > 800  ){
           resizeWidth();
-        } else if (minWidth >= window.innerWidth){
+        } else if ( window.innerWidth < 800 ){
           resizeWidth2();
         }
       }

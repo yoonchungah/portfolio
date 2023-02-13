@@ -217,7 +217,7 @@ import {onMounted}  from 'vue'
               
               
               for(let k=0; k<siteLink.length; k++){
-                siteLink[k].classList.toggle("lk_active");
+                siteLink[k].classList.add("lk_active");
               }
             })
         
@@ -287,7 +287,7 @@ import {onMounted}  from 'vue'
   background-color: #1D1D1D;
   color: #FF6475;
   transform-style: preserve-3d;
-  transform: rotateX(-5deg) ;
+  /* transform: rotateX(-5deg) ; */
   border-radius: 23px;
   border-top: 10px solid #FF6475;
   height: 430px;

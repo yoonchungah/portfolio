@@ -27,8 +27,8 @@
             <div class="project_view">
               <h2 class="pj_num">01/<span>WEB</span></h2>
               <ul class="server_menu ">
-                <li><a class="site_link" href="https://geulhangariproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">VIEW SITE<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/projectgeulhangari.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
@@ -56,7 +56,7 @@
               <h2 class="pj_num">02/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://eriproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%97%90%EB%A6%AC%EC%A0%9C%EB%A1%A0" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/project1216.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
@@ -84,7 +84,7 @@
               <h2 class="pj_num">03/<span>WEB</span></h2>
               <ul class="server_menu ">
                 <li><a class="site_link" href="https://teambogoproject.herokuapp.com/" target="_blank">VIEW SITE<span>→</span></a></li>
-                <li><a class="site_link" href="https://velog.io/@y_chungah96/%EC%9E%A5%EC%9A%B1%EC%A7%84-%EB%AF%B8%EC%88%A0%EA%B4%80" target="_blank">CODE REVIEW<span>→</span></a></li>
+                <li><a class="site_link" href="#" target="_blank">CODE REVIEW<span>→</span></a></li>
                 <li><a class="site_link" href="https://github.com/yoonchungah/bogo.git" target="_blank">GITHUB<span>→</span></a></li>
               </ul>
             </div>
@@ -183,6 +183,7 @@ import {onMounted}  from 'vue'
   export default{
     setup(){
       onMounted(() => {
+        let minWidth = 800;
         let projectBox = document.querySelectorAll('.project_box'); 
         let siteLink = document.querySelectorAll('.site_link');
 
@@ -227,18 +228,17 @@ import {onMounted}  from 'vue'
 
       
       window.addEventListener('resize', function() {
-        if( window.innerWidth > 800 ){
+        if( minWidth < window.innerWidth ){
           resizeWidth();
-        } else if ( window.innerWidth < 800 ) {
-          console.log(window.innerWidth)
+        } else if (minWidth >= window.innerWidth) {
           resizeWidth2();
         }
       });
 
       window.onload = function (){
-        if( window.innerWidth > 800  ){
+        if( minWidth < window.innerWidth ){
           resizeWidth();
-        } else if ( window.innerWidth < 800 ){
+        } else if (minWidth >= window.innerWidth){
           resizeWidth2();
         }
       }
@@ -287,7 +287,7 @@ import {onMounted}  from 'vue'
   background-color: #1D1D1D;
   color: #FF6475;
   transform-style: preserve-3d;
-  /* transform: rotateX(-5deg) ; */
+  transform: rotateX(-5deg) ;
   border-radius: 23px;
   border-top: 10px solid #FF6475;
   height: 430px;
@@ -319,7 +319,6 @@ import {onMounted}  from 'vue'
   color: #1D1D1D;
   border-top: 10px solid #1D1D1D;
   transform: rotateX(0deg);
-  
 }
 .project_box.pj_active:nth-child(1){
   top:-280px;

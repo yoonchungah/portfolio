@@ -319,6 +319,7 @@ import {onMounted}  from 'vue'
   color: #1D1D1D;
   border-top: 10px solid #1D1D1D;
   transform: rotateX(0deg);
+  z-index: 99999;
 }
 .project_box.pj_active:nth-child(1){
   top:-280px;

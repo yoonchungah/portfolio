@@ -217,7 +217,7 @@ import {onMounted}  from 'vue'
               
               
               for(let k=0; k<siteLink.length; k++){
-                siteLink[k].classList.add("lk_active");
+                siteLink[k].classList.toggle("lk_active");
               }
             })
         

@@ -155,9 +155,3 @@ import {onMounted}  from 'vue'
   }
 }
 </style>
-
-
-
-
-
-

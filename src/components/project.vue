@@ -103,6 +103,80 @@
     </article>
   </section>
 </template>
+<<<<<<< HEAD
+=======
+<script>
+import {onMounted}  from 'vue'
+  export default{
+    setup(){
+      onMounted(() => {
+        let minWidth = 800;
+        let projectBox = document.querySelectorAll('.project_box'); 
+        let siteLink = document.querySelectorAll('.site_link');
+
+        function resizeWidth(){
+            for(let j=0; j<projectBox.length; j++){
+            projectBox[j].addEventListener('mouseenter',()=>{
+              projectBox[j].classList.add("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.add("lk_active");
+              }
+            }),
+            projectBox[j].addEventListener('mouseleave',()=>{
+              projectBox[j].classList.remove("pj_active");
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.remove("lk_active");
+                }
+              })
+            }
+          }
+          function resizeWidth2(){
+          for(let j=0; j<projectBox.length; j++){
+            projectBox[j].addEventListener('click',(target)=>{
+              if(target.currentTarget.classList.contains("pj_active")){
+                target.currentTarget.addEventListener('click',(target)=>{
+                  target.currentTarget.classList.toggle("pj_active")
+                })
+              }
+              for(let k=0; k<projectBox.length; k++){
+                projectBox[k].classList.remove("pj_active");
+              }
+              projectBox[j].classList.add("pj_active");
+              
+              
+              for(let k=0; k<siteLink.length; k++){
+                siteLink[k].classList.add("lk_active");
+              }
+            })
+        
+        }
+      }
+
+
+      
+      window.addEventListener('resize', function() {
+        if( minWidth < window.innerWidth ){
+          resizeWidth();
+        } else if (minWidth >= window.innerWidth) {
+          resizeWidth2();
+        }
+      });
+
+      window.onload = function (){
+        if( minWidth < window.innerWidth ){
+          resizeWidth();
+        } else if (minWidth >= window.innerWidth){
+          resizeWidth2();
+        }
+      }
+        
+
+
+      })
+    }
+  };
+</script>
+>>>>>>> 96bcd13b636091045cd1dcfd8a44a613a544b5a8
 <style scoped>
 #Project{
   width: 100%;

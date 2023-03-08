@@ -23,8 +23,9 @@
   #Contact{
     width: 100%;
     height: 100vh;
-    background-color: #0A0A0A;
-    color: #f3f3f3;
+    height: 100%;
+    background-color: #203E94;
+    color: #EDEBDF;
   }
   .contact_wrap{
     padding-top:8%;
@@ -51,7 +52,7 @@
     position: absolute;
     display: inline-block;
     width: 4px;
-    background-color: #e6e6e6;
+    background-color: #EDEBDF;
     border-radius: 3px;
   }
 

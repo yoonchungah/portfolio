@@ -58,28 +58,36 @@ export default {
   },
   data() {
     return {
-    // menuFixed: "false",
+
     }
   },
-  // methods : {
-    
-  //   },
     setup(){
       onMounted(() => {
         const menu = document.getElementById("main_menu");
         let topBtn =  document.querySelector('#topbtn');
+        const Contact = document.getElementById("Contact");
+        const About = document.getElementById("About");
+        let hamNav = document.querySelector('.ham_nav');
 
 
         window.addEventListener("scroll",()=>{
           const scrollY = window.pageYOffset;
           if( Intro.offsetTop < scrollY ){
             menu.classList.add('menuFixed');
-
             topBtn.classList.add('topbtnactive');
-          } else{
+            if( About.offsetTop <= scrollY ){
+              hamNav.classList.add('bot_hamNav');
+            }
+            if( Contact.offsetTop <= scrollY ){
+              menu.classList.remove('menuFixed');
+              menu.classList.add('bot_menuFixed');
+              topBtn.classList.remove('topbtnactive');
+            }
+          }
+           else{
             menu.classList.remove('menuFixed');
-
-            topBtn.classList.remove('topbtnactive')
+            topBtn.classList.remove('topbtnactive');
+            hamNav.classList.remove('bot_hamNav');
           }
         })
 
@@ -130,21 +138,24 @@ export default {
 
 /* 헤더 */
 .header_wrap{
-  background-color: #f3f3f3;
+  background-color: #EDEBDF;
   display: none;
 }
 /* 모바일 네비게이션 */
 .ham_nav{
   width: 30px;
   position: fixed;
-  top:2%; right: 3%;
+  top:3%; right: 4%;
   cursor: pointer;
+}
+.ham_nav.bot_hamNav{
+  right: 1%;
 }
 .ham_nav span{
   display: block;
   width: 100%;
   height: 3px;
-  background-color: #FF6475;
+  background-color: #203E94;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
 }
@@ -176,12 +187,8 @@ export default {
   max-width: 1440px;
   transition: top 2s;
   z-index: 9999;
-  background-color: #0a0a0a;
+  background-color: #203E94;
   height: 10%;
-}
-#main_menu.menuFixed{
-  position: fixed;
-  top:0;
 }
 #main_menu>ul{
   display: flex;
@@ -194,8 +201,23 @@ export default {
 }
 #main_menu>ul>li{
   font-weight: bold;
-  color: #F3F3F3;
+  color: #EDEBDF;
   position: relative;
+}
+#main_menu.menuFixed{
+  position: fixed;
+  top:0;
+  background-color: #EDEBDF;
+}
+/* 컨텍트 부분에서만 바뀔 메뉴바 */
+#main_menu.bot_menuFixed{
+  top:0;
+}
+#main_menu.menuFixed>ul>li{
+  color: #203E94;
+}
+#main_menu.menuFixed>ul>li::after{
+  background-color: #203E94;
 }
 #main_menu>ul>li:hover::after{
   transform: scaleX(1);
@@ -207,7 +229,7 @@ export default {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background-color: #FF6475;
+  background-color: #EDEBDF;
   transform: scaleX(0);
   transform-origin: left;
   transition: all .3s;
@@ -247,13 +269,12 @@ html{
 @media (max-width:1680px) {
   .w1440{
     max-width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 8%;
+    padding-left: 8%;
     box-sizing: border-box;
   }
   #main_menu{
     max-width: 90%;
-    height: 8%;
   }
   #main_menu>ul{
     max-width: 80%;
@@ -269,8 +290,7 @@ html{
     margin-top: 60px;
   }
   #main_menu{
-    top:79%;
-    height: 5%;
+    top:85%;
   }
   #main_menu>ul{
     max-width: 100%;
@@ -305,7 +325,7 @@ html{
     position: absolute;
     top:0; left: 0;
     box-sizing: border-box;
-    background-color:#F3F3F3;
+    background-color:#EDEBDF;
     box-shadow: 0px 0px 30px -5px rgba(0,0,0, 0.3);
     padding-top: 70px;
     padding-bottom: 40%;
@@ -316,6 +336,7 @@ html{
   }
   #main_menu>ul>li::after{
     top: 30px;
+      background-color: #203E94;
   }
   .header_wrap{
     display: block;

@@ -71,12 +71,10 @@ import {onMounted}  from 'vue'
   #Skills{
     width: 100%;
     height: 100%;
-    background-color: #0A0A0A;
-    color: #f3f3f3;
+    background-color: #EDEBDF;
   }
   .skills_wrap{
     padding-top:8%;
-    padding-bottom:8%;
   }
   /* title */
   .skills_wrap>h2{
@@ -137,6 +135,9 @@ import {onMounted}  from 'vue'
     .skill_icon{
       transform: none;
     }
+    .skill_icon img{
+    width: 60%;
+  }
     .skills_icons{
       width: 100%;
       height: 100%;

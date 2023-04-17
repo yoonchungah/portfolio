@@ -196,7 +196,7 @@
       transform: translate(-50%, -50%);
       width: 80%;
       height: 100%;
-      background-image: url(../assets/img/chung_resume.jpg);
+      background-image: url(../assets/img/resume.jpg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 100% auto;

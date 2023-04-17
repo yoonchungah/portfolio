@@ -81,7 +81,9 @@
             <span></span>
             <span></span>
           </div>
-          <div class="modal_Resume_img_box"></div>
+          <div class="modal_Resume_img_box">
+            <img src="../assets/img/resume.jpg" alt="resume">
+          </div>
         </div>
       </div>
     </div>
@@ -172,7 +174,7 @@
       cursor: pointer;
       z-index: 99999;
       right: 12%;
-      top:3%;
+      top:0;
       position: absolute;
     }
     .Resume_close_btn span{
@@ -195,11 +197,17 @@
       top:50%; left: 50%;
       transform: translate(-50%, -50%);
       width: 80%;
-      height: 100%;
-      background-image: url(../assets/img/resume.jpg);
+      /* height: 100%; */
+      /* background-color: #fff; */
+      /* background-image: url(../assets/img/resume.jpg);
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 100% auto;
+      background-size: 100% auto; */
+    }
+    .modal_Resume_img_box>img{
+      width: 100%;
+      margin:3%;
+      box-sizing: border-box;
     }
 
     /* 경력 */

@@ -12,7 +12,7 @@
         <!-- 간략한 프로필 -->
         <article class="about_right_wrap mt40">
           <div class="about_txt_wrap">
-            <h4>도전과 배움을 즐기고 행동에 망설이지 않는 개발자, <span>윤청아</span></h4>
+            <h4>도전과 배움을 즐기고 행동에 망설이지 않는 디자이너, <span>윤청아</span></h4>
             <h3 class="mt40">YOONCHUNGAH</h3>
             <ul class="about_info mt40">
               <li><img src="../assets/img/user_icon.png" alt="about_info_img">1996.02.12</li>
@@ -24,16 +24,23 @@
           </div>
         </article>
       </section>
-      
+
       <!-- 경력 -->
+      <section class="work_wrap mt100">
+        <p>WORK EXPERIENCE</p>
+        <ul class="work_cont mt40">
+          <li>2020.11 - 2022.05 제이에스벤처스 콘텐츠 기획팀 웹디자이너 근무</li>
+          <li>2018.02 평창 동계올림픽 일본 회사 토브톱 투어 인턴 근무</li>
+        </ul>
+      </section>
+      
+      <!-- 공부 -->
       <section class="education_wrap mt100">
         <p>EDUCATION</p>
         <ul class="education_cont mt40">
           <li>2022.09 - 2023.02 디지털컨버전스 스마트_뷰(Vue)활용 프론트엔드 웹 개발자 양성과정 그린컴퓨터 아카데미 수료</li>
-          <!-- <li>2020.11 - 2022.05 제이에스벤처스 콘텐츠 기획팀 웹디자이너 근무</li> -->
           <li>2020.05 - 2020.09 반응형 ui/ux 웹디자인 그린컴퓨터 아카데미 수료</li>
           <li>2018.10 - 2020.01 일본 아카몽카이 어학원 졸업</li>
-          <!-- <li>2018.02 평창 동계올림픽 일본 회사 토브톱 투어 인턴 근무</li> -->
           <li>2015.03 - 2018.02 인덕대학교 일본어학과 졸업</li>
         </ul>
       </section>
@@ -196,6 +203,19 @@
     }
 
     /* 경력 */
+    .work_wrap p{
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+    .work_cont li{
+      padding-bottom: 20px;
+      font-size: 0.8rem;
+    }
+    .work_cont li:last-child{
+      padding-bottom: 0px;
+    }
+
+    /* 공부 */
     .education_wrap p{
       font-size: 1.125rem;
       font-weight: bold;
@@ -207,6 +227,7 @@
     .education_cont li:last-child{
       padding-bottom: 0px;
     }
+
 
     /* 자세 */
     .mind_cont{

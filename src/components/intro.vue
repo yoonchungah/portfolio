@@ -10,7 +10,7 @@
           <li data-aos="fade-right" data-aos-duration="2800" data-aos-easing="ease-in-out">responsible</li>
         </ul>
       </div>
-      <div class="intro_sub_title mt40">안녕하세요. 항상 ‘의문을 갖고 해답을 찾기 위해 노력하자’ 라는 마음으로 개발을 공부하고 있습니다.<br>
+      <div class="intro_sub_title mt40">안녕하세요. 항상 ‘의문을 갖고 해답을 찾기 위해 노력하자’ 라는 마음으로 공부하고 있습니다.<br>
 천리길도 한걸음부터라는 말처럼 꾸준히 포기하지 않고 나아가겠습니다.</div>
     </article>
   </section>
@@ -23,9 +23,6 @@
     width: 100%;
     height: 100vh;
     background-color: #EDEBDF;
-    box-sizing: border-box;
-
-    border: 20px solid #203E94;
     box-sizing: border-box;
   }
 

@@ -15,7 +15,7 @@
       <li v-on:click="gosection" data-target="Skills" class="gotosce">SKILLS</li>
       <li v-on:click="gosection" data-target="Project" class="gotosce">PROJECT</li>
       <li v-on:click="gosection" data-target="Javascript" class="gotosce">TOY PROJECT</li>
-      <li v-on:click="gosection" data-target="Design" class="gotosce">DESIGN</li>
+      <!-- <li v-on:click="gosection" data-target="Design" class="gotosce">DESIGN</li> -->
       <li v-on:click="gosection" data-target="Contact" class="gotosce">CONTACT</li>
     </ul>
   </nav>
@@ -24,7 +24,7 @@
   <skills />
   <project />
   <javascript />
-  <design />
+  <!-- <design /> -->
   <contact />
 
   <div id="topbtn"><img src="../src/assets/img/topbtn.png" alt="top"></div>
@@ -36,7 +36,7 @@ import about from './components/about.vue';
 import skills from './components/skills.vue';
 import project from './components/project.vue';
 import javascript from './components/javascript.vue';
-import design from './components/design.vue';
+// import design from './components/design.vue';
 import contact from './components/contact.vue';
 
 
@@ -51,7 +51,7 @@ export default {
     skills,
     project,
     javascript,
-    design,
+    // design,
     contact,
 
     AOS,
